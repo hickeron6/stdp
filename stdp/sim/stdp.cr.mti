@@ -1,0 +1,52 @@
+C:/Users/62390/Desktop/ARE/stdp/stdp.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/62390/Desktop/ARE/stdp/stdp.vhd
+QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Stdp
+-- Compiling architecture behavior of Stdp
+
+} {} {}} C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd
+QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Weight_Trans
+-- Compiling architecture Behavior of Weight_Trans
+
+} {} {}} C:/Users/62390/Desktop/ARE/queue/queue.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/62390/Desktop/ARE/queue/queue.vhd
+QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Queue_Module
+-- Compiling architecture Behavioral of Queue_Module
+
+} {} {}} C:/Users/62390/Desktop/ARE/stdp/stdp_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/62390/Desktop/ARE/stdp/stdp_tb.vhd
+QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Stdp_tb
+-- Compiling architecture Behavioral of Stdp_tb
+-- Loading package NUMERIC_STD
+-- Loading entity Stdp
+
+} {} {}} C:/Users/62390/Desktop/ARE/encoder/encoder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/62390/Desktop/ARE/encoder/encoder.vhd
+QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity AER_Encoder
+-- Compiling architecture Behavioral of AER_Encoder
+
+} {} {}}

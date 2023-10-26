@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_10.6c/win64
+Eaer_encoder
+w1698265936
+Z0 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/62390/Desktop/ARE/encoder/sim
+8C:/Users/62390/Desktop/ARE/encoder/encoder.vhd
+FC:/Users/62390/Desktop/ARE/encoder/encoder.vhd
+l0
+L6
+V;>OEfjH9];mYdYB3MPS062
+!s100 Zf14>RVJl32W5oh;JBZM33
+Z5 OL;C;10.6c;65
+32
+Z6 !s110 1698266135
+!i10b 1
+Z7 !s108 1698266135.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/encoder/encoder.vhd|
+!s107 C:/Users/62390/Desktop/ARE/encoder/encoder.vhd|
+!i113 0
+Z8 o-work work -2002 -explicit
+Z9 tExplicit 1 CvgOpt 0
+Eaer_encoder_tb
+Z10 w1698076094
+R0
+R1
+R2
+R3
+R4
+Z11 8C:/Users/62390/Desktop/ARE/encoder/encoder_tb.vhd
+Z12 FC:/Users/62390/Desktop/ARE/encoder/encoder_tb.vhd
+l0
+L6
+VDNzeHQMT1O`QbEe?@RQl@3
+!s100 g`DczzNV2YK@HjzQ?BR=f3
+R5
+32
+R6
+!i10b 1
+R7
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/encoder/encoder_tb.vhd|
+!s107 C:/Users/62390/Desktop/ARE/encoder/encoder_tb.vhd|
+!i113 0
+R8
+R9
+Abehavioral
+DEx4 work 11 aer_encoder 0 22 ;>OEfjH9];mYdYB3MPS062
+R0
+R1
+R2
+R3
+DEx4 work 14 aer_encoder_tb 0 22 DNzeHQMT1O`QbEe?@RQl@3
+l25
+L9
+VoBI5z7]5^`_SXQbC:=5ez2
+!s100 ?jESBFU@I;POCLzfhejRU2
+R5
+32
+R6
+!i10b 1
+R7
+R13
+Z14 !s107 C:/Users/62390/Desktop/ARE/encoder/encoder_tb.vhd|
+!i113 0
+R8
+R9

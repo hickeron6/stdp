@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.6c/win64
+T_opt
+!s110 1698244394
+VcDAb9c^]VO;3OXe@VoaL^3
+04 15 10 work queue_module_tb behavioral 1
+=3-8c1645fbd57e-65392729-2bf-5134
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+R0
+Equeue_module
+Z1 w1698245791
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 dC:/Users/62390/Desktop/ARE/queue/sim
+Z8 8C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Z9 FC:/Users/62390/Desktop/ARE/queue/queue.vhd
+l0
+L7
+VIc_Rfd6GOL0S;[d[E:KV@0
+!s100 aGmlj3TKmMK@=C3nNYlmU2
+Z10 OL;C;10.6c;65
+32
+!s110 1698245809
+!i10b 1
+!s108 1698245809.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/queue/queue.vhd|
+Z12 !s107 C:/Users/62390/Desktop/ARE/queue/queue.vhd|
+!i113 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+Z15 DEx4 work 12 queue_module 0 22 Ic_Rfd6GOL0S;[d[E:KV@0
+l54
+L31
+VzmbSb4g^HH@zPEe7JLjgR2
+!s100 3Hl1AU28gNRCkGD]=`MAP0
+R10
+32
+!s110 1698244384
+!i10b 1
+!s108 1698244384.000000
+R11
+R12
+!i113 0
+R13
+R14
+Equeue_module_tb
+Z16 w1698090233
+R4
+R3
+R5
+R6
+R7
+Z17 8C:/Users/62390/Desktop/ARE/queue/queue_tb.vhd
+Z18 FC:/Users/62390/Desktop/ARE/queue/queue_tb.vhd
+l0
+L6
+V<R4_H;47M?0WeR5<G2aDW2
+!s100 1@ZNVhhL24CJoDQbB6oJJ2
+R10
+32
+Z19 !s110 1698243996
+!i10b 1
+Z20 !s108 1698243996.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/queue/queue_tb.vhd|
+Z22 !s107 C:/Users/62390/Desktop/ARE/queue/queue_tb.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R15
+R4
+R3
+R5
+R6
+DEx4 work 15 queue_module_tb 0 22 <R4_H;47M?0WeR5<G2aDW2
+l27
+L9
+V<ZUH;AD8?aMAI3okho=QZ0
+!s100 kBC;dziEBf9QffgGn:omo2
+R10
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R13
+R14

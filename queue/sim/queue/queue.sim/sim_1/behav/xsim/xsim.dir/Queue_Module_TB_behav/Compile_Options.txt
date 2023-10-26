@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Queue_Module_TB_behav" "xil_defaultlib.Queue_Module_TB" -log "elaborate.log" 

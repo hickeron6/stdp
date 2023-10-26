@@ -1,0 +1,234 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/62390/Desktop/ARE/encoder/sim
+T_opt
+!s110 1698349357
+VPkg32N[8cFH9dafBXOB=]3
+04 7 10 work stdp_tb behavioral 1
+=1-8c1645fbd57e-653ac12d-1c-6230
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+Eaer_encoder
+Z0 w1698267006
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/62390/Desktop/ARE/stdp/sim
+Z6 8C:/Users/62390/Desktop/ARE/encoder/encoder.vhd
+Z7 FC:/Users/62390/Desktop/ARE/encoder/encoder.vhd
+l0
+L6
+V;>OEfjH9];mYdYB3MPS062
+!s100 Zf14>RVJl32W5oh;JBZM33
+Z8 OL;C;10.6c;65
+32
+Z9 !s110 1698349350
+!i10b 1
+Z10 !s108 1698349349.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/encoder/encoder.vhd|
+Z12 !s107 C:/Users/62390/Desktop/ARE/encoder/encoder.vhd|
+!i113 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 11 aer_encoder 0 22 ;>OEfjH9];mYdYB3MPS062
+l31
+L24
+Vf7HlVl><giH8jB[VkPgkg2
+!s100 eOLW>@]T@MzDhk`]^H`X:0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Equeue_module
+Z15 w1698349108
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R1
+R3
+R4
+R5
+Z17 8C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Z18 FC:/Users/62390/Desktop/ARE/queue/queue.vhd
+l0
+L7
+Vl0=^Lj=nDl[X:hF7]1ZVT0
+!s100 de_IO@c_;ebSmCk3KdLfE1
+R8
+32
+Z19 !s110 1698349349
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/queue/queue.vhd|
+Z21 !s107 C:/Users/62390/Desktop/ARE/queue/queue.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R16
+R2
+R1
+R3
+R4
+DEx4 work 12 queue_module 0 22 l0=^Lj=nDl[X:hF7]1ZVT0
+l55
+L32
+VgezG>aRWL`lMoIeP0M[b;3
+!s100 Aajdjebii;mol]hSN^GPl0
+R8
+32
+R19
+!i10b 1
+R10
+R20
+R21
+!i113 0
+R13
+R14
+Estdp
+Z22 w1698349346
+R16
+R3
+R4
+R5
+Z23 8C:/Users/62390/Desktop/ARE/stdp/stdp.vhd
+Z24 FC:/Users/62390/Desktop/ARE/stdp/stdp.vhd
+l0
+L5
+V7ST8oNU?C^0>a@9zR6:WS0
+!s100 ?bQchTX6F^Q;E]jFHlWoH3
+R8
+32
+R19
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/stdp/stdp.vhd|
+Z26 !s107 C:/Users/62390/Desktop/ARE/stdp/stdp.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R16
+R3
+R4
+Z27 DEx4 work 4 stdp 0 22 7ST8oNU?C^0>a@9zR6:WS0
+l116
+L30
+VgfV:YI4A_nReLQf_zTO2T1
+!s100 c;m<X@H4bC]1?jH2?Bn[T1
+R8
+32
+R19
+!i10b 1
+R10
+R25
+R26
+!i113 0
+R13
+R14
+Estdp_tb
+Z28 w1698265644
+R1
+R2
+R3
+R4
+R5
+Z29 8C:/Users/62390/Desktop/ARE/stdp/stdp_tb.vhd
+Z30 FC:/Users/62390/Desktop/ARE/stdp/stdp_tb.vhd
+l0
+L6
+VmzW?U@@F>:dLYGg1[B2^93
+!s100 AHkS@Z;PP?dGL;SEF[4VK1
+R8
+32
+R19
+!i10b 1
+R10
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/stdp/stdp_tb.vhd|
+Z32 !s107 C:/Users/62390/Desktop/ARE/stdp/stdp_tb.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R16
+R27
+R1
+R2
+R3
+R4
+DEx4 work 7 stdp_tb 0 22 mzW?U@@F>:dLYGg1[B2^93
+l29
+L9
+V2:@>BA<:fAMhZb]S@9PeF3
+!s100 1cHUfk[cjmCL30^T^4VSH0
+R8
+32
+R19
+!i10b 1
+R10
+R31
+R32
+!i113 0
+R13
+R14
+Eweight_trans
+Z33 w1698264705
+R16
+R3
+R4
+R5
+Z34 8C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd
+Z35 FC:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd
+l0
+L5
+VBCObh3J]U@LQCz6CCoS?M0
+!s100 GcBc;?@hCHjbB2S7OHeg22
+R8
+32
+R9
+!i10b 1
+Z36 !s108 1698349350.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd|
+Z38 !s107 C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R16
+R3
+R4
+DEx4 work 12 weight_trans 0 22 BCObh3J]U@LQCz6CCoS?M0
+l36
+L31
+V0<hMG7=HaT1fz?aVTN1Q=1
+!s100 VKRM5LS?nZVdZee9>8_h@1
+R8
+32
+R9
+!i10b 1
+R36
+R37
+R38
+!i113 0
+R13
+R14
