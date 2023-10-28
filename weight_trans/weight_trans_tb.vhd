@@ -67,7 +67,7 @@ begin
   begin
     wait for 5 ns;  -- Adjust the reset duration as needed
     Reset <= '1';
-    wait for 9 ns;
+    wait for 10 ns;
     Reset <= '0';
     Event_Valid_oppo <= '1';
     Event_Address <= "001";
@@ -77,6 +77,24 @@ begin
     wait for 5 ns;
     Event_Valid_oppo <= '0';
     wait for 5 ns;
+    -------
+    Event_Valid_oppo<= '1';              -- test sign1 and sign2 time ==0 situation
+    Event_Address <= "110";
+    Dequeued_address <= "011";
+    time_attach <= "00000";
+    Dequeued_Time <="00011";
+    wait for 5 ns;
+    Event_Valid_oppo <= '0';
+    wait for 5 ns;
+    Event_Valid_oppo<= '1';
+    Event_Address <= "101";
+    Dequeued_address <= "010";
+    time_attach <= "00001";
+    Dequeued_Time <="00000";
+    wait for 5 ns;
+    Event_Valid_oppo <= '0';
+    wait for 5 ns;
+    ------
     Event_Valid_oppo<= '1';
     Event_Address <= "100";
     Dequeued_address <= "011";

@@ -24,8 +24,8 @@ entity Queue_Module is
     time_attach_oppo : in STD_LOGIC_VECTOR(time_length-1 downto 0); -- Time attachment
     -- 
     Dequeued_Address : out STD_LOGIC_VECTOR(addrbit-1 downto 0);
-    Dequeued_Time : out STD_LOGIC_VECTOR(time_length-1 downto 0)
-    --Queue_Valid : out STD_LOGIC
+    Dequeued_Time : out STD_LOGIC_VECTOR(time_length-1 downto 0);
+    Queue_Valid : out STD_LOGIC
   );
 end Queue_Module;
 
@@ -88,15 +88,15 @@ begin
         end if;
 
       --Dequeue all element
-        if Queue(Queue_Head).Address /= (addrbit-1 downto 0 => '0') then
+        if Queue(Queue_Head).Time_Attach /= (time_length-1 downto 0 => '0') then
           Dequeued_Address <= Queue(Queue_Head).Address;
           Dequeued_Time <= Queue(Queue_Head).Time_Attach;
           Queue_Head <= Queue_Head + 1;
-          --Queue_Valid <= '1';
+          Queue_Valid <= '1';
         else
           State <= IDLE;
           Queue_Head <= Queue_point;
-          --Queue_Valid <= '0';
+          Queue_Valid <= '0';
         end if;
     end case;
   end if;

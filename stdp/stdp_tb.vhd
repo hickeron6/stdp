@@ -70,10 +70,17 @@ begin
     Input_Channel <= "10101"; 
     Input_Valid <= '1';      
     
-    wait for 80 ns;
-
+    wait for 120 ns;
+    Input_Channel <= "00000"; 
+    Input_Valid <= '0'; 
     Output_Channel <= "01000"; 
-    Output_Valid <= '1';      
+    Output_Valid <= '1'; 
+    
+    wait for 120 ns;
+    Input_Channel <= "01000"; 
+    Input_Valid <= '1'; 
+    Output_Channel <= "00000"; 
+    Output_Valid <= '0';      
 
     wait for 20 ns;
 

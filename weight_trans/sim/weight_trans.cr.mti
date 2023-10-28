@@ -1,0 +1,13 @@
+C:/Users/62390/Desktop/ARE/weight_trans/weight_trans_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/62390/Desktop/ARE/weight_trans/weight_trans_tb.vhd
+QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Weight_Trans_tb
+-- Compiling architecture Behavioral of Weight_Trans_tb
+-- Loading package NUMERIC_STD
+-- Loading entity Weight_Trans
+
+} {} {}}

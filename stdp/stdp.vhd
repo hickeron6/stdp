@@ -38,10 +38,16 @@ architecture behavior of Stdp is
   signal Dequeued_Time_pre : STD_LOGIC_VECTOR(time_length-1 downto 0) := (others => '0');
   signal Dequeued_Address_post : STD_LOGIC_VECTOR(addrbit-1 downto 0) := (others => '0');
   signal Dequeued_Time_post : STD_LOGIC_VECTOR(time_length-1 downto 0) := (others => '0');
+  signal Queue_Valid_pre : STD_LOGIC;
+  signal Queue_Valid_post : STD_LOGIC;
   signal Weight_Delta_pre : STD_LOGIC_VECTOR(time_length-1 downto 0) := (others => '0');
   signal Weight_Delta_post : STD_LOGIC_VECTOR(time_length-1 downto 0) := (others => '0');
   signal Weight_Delta_Indicator_pre : STD_LOGIC := '0';
   signal Weight_Delta_Indicator_post : STD_LOGIC := '0';
+  signal Weight_Adress_1_pre : STD_LOGIC_VECTOR(addrbit-1 downto 0) := (others => '0');
+  signal Weight_Adress_2_pre : STD_LOGIC_VECTOR(addrbit-1 downto 0) := (others => '0');
+  signal Weight_Adress_1_post : STD_LOGIC_VECTOR(addrbit-1 downto 0) := (others => '0');
+  signal Weight_Adress_2_post : STD_LOGIC_VECTOR(addrbit-1 downto 0) := (others => '0');
 
   component AER_Encoder is
   generic (
@@ -81,8 +87,8 @@ architecture behavior of Stdp is
     time_attach_oppo : in STD_LOGIC_VECTOR(time_length-1 downto 0);
     -- 
     Dequeued_Address : out STD_LOGIC_VECTOR(addrbit-1 downto 0);
-    Dequeued_Time : out STD_LOGIC_VECTOR(time_length-1 downto 0)
-    --Queue_Valid : out STD_LOGIC
+    Dequeued_Time : out STD_LOGIC_VECTOR(time_length-1 downto 0);
+    Queue_Valid : out STD_LOGIC  
   );
   end component Queue_Module;
 
@@ -170,7 +176,8 @@ begin
       time_attach_oppo   =>   time_attach_post,
     -- 
       Dequeued_Address   =>   Dequeued_Address_pre,
-      Dequeued_Time      =>   Dequeued_Time_pre
+      Dequeued_Time      =>   Dequeued_Time_pre,
+      Queue_Valid        =>   Queue_Valid_pre
     );
 
   Post_queue : Queue_Module
@@ -193,7 +200,8 @@ begin
       time_attach_oppo   =>   time_attach_pre,
     -- 
       Dequeued_Address   =>   Dequeued_Address_post,
-      Dequeued_Time      =>   Dequeued_Time_post
+      Dequeued_Time      =>   Dequeued_Time_post,
+      Queue_Valid        =>   Queue_Valid_post
     );
 
 
@@ -211,14 +219,14 @@ begin
   port map(
       Clock              =>   Clock,
       Reset              =>   Reset,
-      Event_Address      =>   Event_Address_pre,   --may need change
+      Event_Address      =>   Event_Address_post,   --may need change
       time_attach        =>   Dequeued_Time_pre,
-      Dequeued_address   =>   Event_Address_post,    --may need change
+      Dequeued_address   =>   Dequeued_Address_pre,    --may need change
       Dequeued_Time      =>   time_attach_post, 
-      Event_Valid_oppo   =>   Input_Valid,
+      Event_Valid_oppo   =>   Queue_Valid_pre,
     --
-      Weight_Adress_1    =>   Weight_Adress_1,
-      Weight_Adress_2    =>   Weight_Adress_2,
+      Weight_Adress_1    =>   Weight_Adress_1_pre,
+      Weight_Adress_2    =>   Weight_Adress_2_pre,
       Weight_Delta       =>   Weight_Delta_pre,
       Weight_Delta_Indicator   =>   Weight_Delta_Indicator_pre
   );
@@ -238,12 +246,12 @@ begin
       Reset              =>   Reset,
       Event_Address      =>   Event_Address_pre,   --may need change
       time_attach        =>   time_attach_pre,
-      Dequeued_address   =>   Event_Address_post,    --may need change
+      Dequeued_address   =>   Dequeued_Address_post,    --may need change
       Dequeued_Time      =>   Dequeued_Time_post,
-      Event_Valid_oppo   =>   Output_Valid,
+      Event_Valid_oppo   =>   Queue_Valid_post,
     --
-      Weight_Adress_1    =>   Weight_Adress_1,
-      Weight_Adress_2    =>   Weight_Adress_2,
+      Weight_Adress_1    =>   Weight_Adress_1_post,
+      Weight_Adress_2    =>   Weight_Adress_2_post,
       Weight_Delta       =>   Weight_Delta_post,
       Weight_Delta_Indicator   =>   Weight_Delta_Indicator_post
   );
@@ -251,12 +259,24 @@ begin
 
   process(Clock)
   begin
-    if Weight_Delta_Indicator_pre = '0' then
-      Weight_Delta <= Weight_Delta_post;
-      Weight_Delta_Indicator <= Weight_Delta_Indicator_post;
-    else
+    if Weight_Delta_Indicator_pre = '1' then
       Weight_Delta <= Weight_Delta_pre;
       Weight_Delta_Indicator <= Weight_Delta_Indicator_pre;
+      --
+      Weight_Adress_1 <= Weight_Adress_1_pre;
+      Weight_Adress_2 <= Weight_Adress_2_pre;
+    elsif Weight_Delta_Indicator_post = '1' then
+      Weight_Delta <= Weight_Delta_post;
+      Weight_Delta_Indicator <= Weight_Delta_Indicator_post;
+      --
+      Weight_Adress_1 <= Weight_Adress_1_post;
+      Weight_Adress_2 <= Weight_Adress_2_post;
+    else 
+      Weight_Delta <= (others => '0');
+      Weight_Delta_Indicator <= '0';
+      --
+      Weight_Adress_1 <= (others => '0');
+      Weight_Adress_2 <= (others => '0');
     end if;
     
   end process;
