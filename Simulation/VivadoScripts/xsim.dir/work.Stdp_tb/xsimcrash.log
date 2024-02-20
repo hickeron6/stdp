@@ -1,0 +1,21 @@
+Exception at PC 0x00007FFA93A23690
+Attemped to write at address 0x0000000000000000
+Printing stacktrace...
+
+[0] (xsi_trace_all+0x17e40) [0x00007FFA93A23690]
+[1] (xsi_trace_all+0x17e40) [0x00007FFA93A23690]
+[2] (Scheduler::getSchedulerMap+0x39f0) [0x00007FFA938FB380]
+[3] (Scheduler::getSchedulerMap+0x3aaa) [0x00007FFA938FB43A]
+[4] (Scheduler::getSchedulerMap+0x3b8d) [0x00007FFA938FB51D]
+[5] (iki_vhdl_schedule_transaction_signal_slow+0x1f4) [0x00007FFA9390BCB4]
+[6]  [0x00000000004052A1]
+[7] (xsi_trace_all+0x1044b) [0x00007FFA93A1BC9B]
+[8]  [0x0000000000407C4D]
+[9] (xsi_trace_all+0x1414a) [0x00007FFA93A1F99A]
+[10] (xsi_trace_all+0xb10f) [0x00007FFA93A1695F]
+[11] (xsi_trace_all+0x9cbc) [0x00007FFA93A1550C]
+[12] (xsi_trace_all+0x9829) [0x00007FFA93A15079]
+[13] (configthreadlocale+0x92) [0x00007FFB291F1BB2]
+[14] (BaseThreadInitThunk+0x14) [0x00007FFB2A6C7614]
+[15] (RtlUserThreadStart+0x21) [0x00007FFB2BAE26F1]
+Done

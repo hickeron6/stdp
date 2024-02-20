@@ -13,6 +13,6 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=6,addrb...]
+Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [aer_encoder_default]
 Compiling architecture behavioral of entity xil_defaultlib.aer_encoder_tb
 Built simulation snapshot AER_Encoder_TB_behav

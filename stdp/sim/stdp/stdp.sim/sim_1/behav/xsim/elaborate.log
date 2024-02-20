@@ -14,9 +14,9 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=5,addrb...]
-Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(inputneuron=5,addr...]
-Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=5,addr...]
-Compiling architecture behavior of entity xil_defaultlib.Stdp [\Stdp(time_length=7)\]
+Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(inputneuron=5,time...]
+Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=5,tau_...]
+Compiling architecture behavior of entity xil_defaultlib.Stdp [\Stdp(inputneuron=5,outputneuron...]
 Compiling architecture behavioral of entity xil_defaultlib.stdp_tb
 Built simulation snapshot Stdp_tb_behav

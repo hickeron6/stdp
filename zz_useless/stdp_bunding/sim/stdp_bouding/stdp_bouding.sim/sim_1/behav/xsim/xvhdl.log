@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AER_Encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/queue.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Queue_Module'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Stdp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/weight_trans.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Weight_Trans'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Stdp_tb'

@@ -1,1 +1,5 @@
 Time resolution is 1 ps
+Note: errorrrrrrrrrrrr
+Time: 405 ns  Iteration: 1  Process: /Stdp_tb/DUT/Post_weight_trans/line__49  File: C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd
+Note: errorrrrrrrrrrrr
+Time: 435 ns  Iteration: 1  Process: /Stdp_tb/DUT/Post_weight_trans/line__49  File: C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd

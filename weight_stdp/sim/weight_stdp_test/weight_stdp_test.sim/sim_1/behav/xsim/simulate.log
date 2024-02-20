@@ -1,0 +1,97 @@
+Time resolution is 1 ps
+Note: weight_wholeRow_rd = 0
+Time: 95 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 0
+Time: 95 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 2
+Time: 95 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 2
+Time: 95 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 95 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 115 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_wholeRow_rd = 2
+Time: 135 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 2
+Time: 135 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 2
+Time: 135 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 4
+Time: 135 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 135 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 155 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_wholeRow_rd = 4
+Time: 175 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 4
+Time: 175 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 2
+Time: 175 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 6
+Time: 175 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 175 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 195 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_wholeRow_rd = 6
+Time: 215 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 0
+Time: 215 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 2
+Time: 215 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 2
+Time: 215 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 215 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 235 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_wholeRow_rd = 70
+Time: 255 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 2
+Time: 255 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 2
+Time: 255 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 4
+Time: 255 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 255 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 275 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_wholeRow_rd = 134
+Time: 295 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 4
+Time: 295 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 2
+Time: 295 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 6
+Time: 295 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 295 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 315 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_wholeRow_rd = 198
+Time: 335 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 6
+Time: 335 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 0
+Time: 335 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 6
+Time: 335 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 335 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 355 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_wholeRow_rd = 198
+Time: 375 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 6
+Time: 375 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight_delta  = 0
+Time: 375 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: weight = 6
+Time: 375 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: write_addr  = 43
+Time: 375 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd
+Note: rdaddr_buffer = 43
+Time: 395 ns  Iteration: 1  Process: /tb_weights_bram/uut/line__154  File: C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd

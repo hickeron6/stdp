@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/encoder/encoder.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'AER_Encoder'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/encoder/encoder_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'AER_Encoder_TB'

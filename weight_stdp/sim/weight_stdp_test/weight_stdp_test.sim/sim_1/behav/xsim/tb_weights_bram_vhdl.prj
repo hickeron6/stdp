@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../../ARE_test/weight_bram_test/decoder.vhd" \
+"../../../../../../weights_bram.vhd" \
+"../../../../../../weights_bram_tb.vhd" \
+
+# Do not sort compile order
+nosort

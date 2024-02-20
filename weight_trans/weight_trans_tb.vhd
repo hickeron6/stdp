@@ -10,11 +10,12 @@ architecture Behavioral of Weight_Trans_tb is
   -- Constants for generic parameters
   constant inputneuron : integer := 5;
   constant addrbit : integer := 3;
-  constant time_length : integer := 5;
+  constant time_length : integer := 10;
   constant A_plus : integer := 1;
   constant Tau_plus : integer := 16;
   constant A_neg : integer := 1;
   constant Tau_neg : integer := 16;
+  constant weights_bit_width : integer := 10;
 
   -- Signals for testbench
   signal Clock : STD_LOGIC := '0';
@@ -25,7 +26,7 @@ architecture Behavioral of Weight_Trans_tb is
   signal Dequeued_Time : STD_LOGIC_VECTOR(time_length-1 downto 0) := (others => '0');
   signal Weight_Adress_1 : STD_LOGIC_VECTOR(addrbit-1 downto 0);
   signal Weight_Adress_2 : STD_LOGIC_VECTOR(addrbit-1 downto 0);
-  signal Weight_Delta : STD_LOGIC_VECTOR(time_length-1 downto 0);
+  signal Weight_Delta : STD_LOGIC_VECTOR(weights_bit_width-1 downto 0);
   signal Weight_Delta_Indicator :  STD_LOGIC;
   signal Event_Valid_oppo : STD_LOGIC;
 
@@ -39,7 +40,8 @@ begin
       A_plus => A_plus,
       Tau_plus => Tau_plus,
       A_neg => A_neg,
-      Tau_neg => Tau_neg
+      Tau_neg => Tau_neg,
+      weights_bit_width => weights_bit_width
     )
     port map (
       Clock => Clock,
@@ -72,8 +74,8 @@ begin
     Event_Valid_oppo <= '1';
     Event_Address <= "001";
     Dequeued_address <= "010";
-    time_attach <= "00100";
-    Dequeued_Time <="00001";
+    time_attach <= "0000000100";
+    Dequeued_Time <="0000000001";
     wait for 5 ns;
     Event_Valid_oppo <= '0';
     wait for 5 ns;
@@ -81,16 +83,16 @@ begin
     Event_Valid_oppo<= '1';              -- test sign1 and sign2 time ==0 situation
     Event_Address <= "110";
     Dequeued_address <= "011";
-    time_attach <= "00000";
-    Dequeued_Time <="00011";
+    time_attach <= "0000000000";
+    Dequeued_Time <="0000000011";
     wait for 5 ns;
     Event_Valid_oppo <= '0';
     wait for 5 ns;
     Event_Valid_oppo<= '1';
     Event_Address <= "101";
     Dequeued_address <= "010";
-    time_attach <= "00001";
-    Dequeued_Time <="00000";
+    time_attach <= "0000000001";
+    Dequeued_Time <="0000000000";
     wait for 5 ns;
     Event_Valid_oppo <= '0';
     wait for 5 ns;
@@ -98,16 +100,16 @@ begin
     Event_Valid_oppo<= '1';
     Event_Address <= "100";
     Dequeued_address <= "011";
-    time_attach <= "01001";
-    Dequeued_Time <="00011";
+    time_attach <= "0000001001";
+    Dequeued_Time <="0000000011";
     wait for 5 ns;
     Event_Valid_oppo <= '0';
     wait for 5 ns;
     Event_Valid_oppo<= '1';
     Event_Address <= "100";
     Dequeued_address <= "011";
-    time_attach <= "01001";
-    Dequeued_Time <="00011";
+    time_attach <= "0000001001";
+    Dequeued_Time <="0000000011";
     wait for 5 ns;
     Event_Valid_oppo <= '0';
 

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Weight_Trans'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/62390/Desktop/ARE/weight_trans/weight_trans_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Weight_Trans_tb'

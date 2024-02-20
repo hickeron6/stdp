@@ -1,0 +1,185 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Dec 12 22:22:38 2023
+| Host         : LAPTOP-AH1MV0TF running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Stdp_control_sets_placed.rpt
+| Design       : Stdp
+| Device       : xc7a200ti
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   107 |
+|    Minimum number of control sets                        |   107 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   406 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   107 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    99 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            5 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |              50 |           15 |
+| Yes          | No                    | No                     |             160 |           63 |
+| Yes          | No                    | Yes                    |            3480 |         1419 |
+| Yes          | Yes                   | No                     |             104 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                   Enable Signal                   |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+---------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|  Clock_IBUF_BUFG |                                                   | Reset_IBUF                                |                2 |              2 |         1.00 |
+|  Clock_IBUF_BUFG |                                                   |                                           |                5 |              6 |         1.20 |
+|  Clock_IBUF_BUFG | Post_queue/State_reg_n_0                          | Reset_IBUF                                |                4 |              9 |         2.25 |
+|  Clock_IBUF_BUFG | Pre_queue/State                                   | Reset_IBUF                                |                3 |              9 |         3.00 |
+|  Clock_IBUF_BUFG | Pre_encoder/Event_Address0                        |                                           |                2 |             10 |         5.00 |
+|  Clock_IBUF_BUFG | Post_encoder/Event_Address0                       |                                           |                2 |             10 |         5.00 |
+|  Clock_IBUF_BUFG | Post_encoder/time_attach0                         |                                           |                3 |             10 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_encoder/time_attach0                          |                                           |                3 |             10 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[31][Time_Attach]                  | Reset_IBUF                                |               13 |             20 |         1.54 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[9][Time_Attach]                   | Reset_IBUF                                |               16 |             20 |         1.25 |
+|  Clock_IBUF_BUFG | Post_queue/Address_oppo[9]_i_1__0_n_0             |                                           |               15 |             20 |         1.33 |
+|  Clock_IBUF_BUFG | Post_queue/Dequeued_Address[9]_i_2__0_n_0         | Post_queue/Dequeued_Address[9]_i_1__0_n_0 |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[6][Time_Attach]                   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[5][Time_Attach]                   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[4][Time_Attach]                   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[8][Time_Attach]                   | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[7][Time_Attach]                   | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[19][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               10 |             20 |         2.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[30][Time_Attach]                  | Reset_IBUF                                |               14 |             20 |         1.43 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[10][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               13 |             20 |         1.54 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[15][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[16][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[13][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[14][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               10 |             20 |         2.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[0][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[11][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[12][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[20][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[24][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                5 |             20 |         4.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[26][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               14 |             20 |         1.43 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[18][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[22][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                5 |             20 |         4.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[25][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               11 |             20 |         1.82 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[23][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[21][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               11 |             20 |         1.82 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[27][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                5 |             20 |         4.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[17][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                5 |             20 |         4.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[1][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[36][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                3 |             20 |         6.67 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[31][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               18 |             20 |         1.11 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[39][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[33][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[29][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[28][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[30][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |               10 |             20 |         2.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[38][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[2][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[32][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                5 |             20 |         4.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[35][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[37][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[34][Time_Attach][9]_i_1__0_n_0   | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[7][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[3][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |               12 |             20 |         1.67 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[5][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |               10 |             20 |         2.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[4][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |               12 |             20 |         1.67 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[6][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |               11 |             20 |         1.82 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[8][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |               12 |             20 |         1.67 |
+|  Clock_IBUF_BUFG | Post_queue/Queue[9][Time_Attach][9]_i_1__0_n_0    | Reset_IBUF                                |               15 |             20 |         1.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Address_oppo[9]_i_1_n_0                 |                                           |               14 |             20 |         1.43 |
+|  Clock_IBUF_BUFG | Pre_queue/Dequeued_Address[9]_i_2_n_0             | Pre_queue/Dequeued_Address[9]_i_1_n_0     |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[10][Time_Attach]                  | Reset_IBUF                                |               11 |             20 |         1.82 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[0][Time_Attach]                   | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[11][Time_Attach]                  | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[12][Time_Attach]                  | Reset_IBUF                                |               10 |             20 |         2.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[14][Time_Attach]                  | Reset_IBUF                                |                4 |             20 |         5.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[13][Time_Attach]                  | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[15][Time_Attach]                  | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[16][Time_Attach]                  | Reset_IBUF                                |               11 |             20 |         1.82 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[17][Time_Attach]                  | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[22][Time_Attach]                  | Reset_IBUF                                |                5 |             20 |         4.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[26][Time_Attach]                  | Reset_IBUF                                |                4 |             20 |         5.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[27][Time_Attach]                  | Reset_IBUF                                |               12 |             20 |         1.67 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[1][Time_Attach]                   | Reset_IBUF                                |                5 |             20 |         4.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[21][Time_Attach]                  | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[23][Time_Attach]                  | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[24][Time_Attach]                  | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[25][Time_Attach]                  | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[20][Time_Attach]                  | Reset_IBUF                                |               10 |             20 |         2.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[19][Time_Attach]                  | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[33][Time_Attach]                  | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[36][Time_Attach]                  | Reset_IBUF                                |                4 |             20 |         5.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[37][Time_Attach]                  | Reset_IBUF                                |                4 |             20 |         5.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[29][Time_Attach]                  | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[38][Time_Attach]                  | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[2][Time_Attach]                   | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[28][Time_Attach]                  | Reset_IBUF                                |               12 |             20 |         1.67 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[35][Time_Attach]                  | Reset_IBUF                                |                9 |             20 |         2.22 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[18][Time_Attach]                  | Reset_IBUF                                |                6 |             20 |         3.33 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[34][Time_Attach]                  | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[39][Time_Attach]                  | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[32][Time_Attach]                  | Reset_IBUF                                |                7 |             20 |         2.86 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue[3][Time_Attach]                   | Reset_IBUF                                |                8 |             20 |         2.50 |
+|  Clock_IBUF_BUFG |                                                   | Post_queue/Queue_Valid_reg_1              |                5 |             25 |         5.00 |
+|  Clock_IBUF_BUFG |                                                   | Pre_queue/Queue_Valid_reg_1               |               10 |             25 |         2.50 |
+|  Clock_IBUF_BUFG | Post_queue/Input_Buffer_Tail[0]_i_1__0_n_0        | Reset_IBUF                                |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Post_encoder/Event_Count0                         | Reset_IBUF                                |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Post_encoder/Valid_buffer0                        | Post_encoder/Valid_buffer[0]_i_1__0_n_0   |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Pre_encoder/Event_Count0                          | Reset_IBUF                                |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Input_Buffer_Tail[0]_i_1_n_0            | Reset_IBUF                                |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Pre_encoder/Valid_buffer0                         | Pre_encoder/Valid_buffer[0]_i_1_n_0       |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Pre_queue/Queue_Tail[0]_i_1_n_0                   | Reset_IBUF                                |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Post_queue/Queue_Tail[0]_i_1__0_n_0               | Reset_IBUF                                |                8 |             32 |         4.00 |
+|  Clock_IBUF_BUFG | Post_queue/Input_Buffer_Head[0]_i_1__0_n_0        | Reset_IBUF                                |                8 |             35 |         4.38 |
+|  Clock_IBUF_BUFG | Pre_queue/Input_Buffer_Head[0]_i_1_n_0            | Reset_IBUF                                |                9 |             35 |         3.89 |
+|  Clock_IBUF_BUFG | Post_encoder/E[0]                                 |                                           |               24 |             80 |         3.33 |
+|  Clock_IBUF_BUFG | Post_queue/Input_Buffer[0][Address][9]_i_1__0_n_0 | Reset_IBUF                                |              346 |            800 |         2.31 |
+|  Clock_IBUF_BUFG | Pre_queue/Input_Buffer[39][Time_Attach]           | Reset_IBUF                                |              336 |            800 |         2.38 |
++------------------+---------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+
+

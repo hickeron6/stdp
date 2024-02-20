@@ -1,0 +1,26 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe Stdp_tb 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity work.AER_Encoder [aer_encoder_default]
+Compiling architecture behavioral of entity work.AER_Encoder [\AER_Encoder(inputneuron=400)\]
+Compiling architecture behavioral of entity work.Queue_Module [\Queue_Module(inputneuron=784,ti...]
+Compiling architecture behavioral of entity work.Queue_Module [\Queue_Module(inputneuron=400,ti...]
+Compiling architecture behavior of entity work.Weight_Trans [\Weight_Trans(tau_plus=1320,tau_...]
+Compiling architecture behavior of entity work.Weight_Trans [\Weight_Trans(inputneuron=400,ta...]
+Compiling architecture behavior of entity work.Stdp [\Stdp(tau_plus=1320,tau_neg=1320...]
+Compiling architecture behavioral of entity work.stdp_tb
+Built simulation snapshot work.Stdp_tb

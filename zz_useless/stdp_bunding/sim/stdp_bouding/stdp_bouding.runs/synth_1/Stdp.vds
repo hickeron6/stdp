@@ -1,0 +1,586 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Dec 12 22:19:48 2023
+# Process ID: 13640
+# Current directory: C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.runs/synth_1
+# Command line: vivado.exe -log Stdp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Stdp.tcl
+# Log file: C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.runs/synth_1/Stdp.vds
+# Journal file: C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.runs/synth_1\vivado.jou
+# Running On: LAPTOP-AH1MV0TF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 17048 MB
+#-----------------------------------------------------------
+source Stdp.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 449.809 ; gain = 158.090
+Command: read_checkpoint -auto_incremental -incremental C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.srcs/utils_1/imports/synth_1/Stdp.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.srcs/utils_1/imports/synth_1/Stdp.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Stdp -part xc7a200tiffg1156-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200ti'
+INFO: [Device 21-403] Loading part xc7a200tiffg1156-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16332
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1328.441 ; gain = 418.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Stdp' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:31]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'AER_Encoder' declared at 'C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/encoder.vhd:6' bound to instance 'Pre_encoder' of component 'AER_Encoder' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'AER_Encoder' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/encoder.vhd:24]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'time_buffer' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/encoder.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'AER_Encoder' (0#1) [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/encoder.vhd:24]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'AER_Encoder' declared at 'C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/encoder.vhd:6' bound to instance 'Post_encoder' of component 'AER_Encoder' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:153]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+	Parameter A_plus bound to: 1 - type: integer 
+	Parameter Tau_plus bound to: 32 - type: integer 
+	Parameter A_neg bound to: 1 - type: integer 
+	Parameter Tau_neg bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Queue_Module' declared at 'C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/queue.vhd:7' bound to instance 'Pre_queue' of component 'Queue_Module' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'Queue_Module' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/queue.vhd:35]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+	Parameter A_plus bound to: 1 - type: integer 
+	Parameter Tau_plus bound to: 32 - type: integer 
+	Parameter A_neg bound to: 1 - type: integer 
+	Parameter Tau_neg bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Queue_Module' (0#1) [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/queue.vhd:35]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+	Parameter A_plus bound to: 1 - type: integer 
+	Parameter Tau_plus bound to: 32 - type: integer 
+	Parameter A_neg bound to: 1 - type: integer 
+	Parameter Tau_neg bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Queue_Module' declared at 'C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/queue.vhd:7' bound to instance 'Post_queue' of component 'Queue_Module' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:198]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+	Parameter A_plus bound to: 1 - type: integer 
+	Parameter Tau_plus bound to: 32 - type: integer 
+	Parameter A_neg bound to: 1 - type: integer 
+	Parameter Tau_neg bound to: 32 - type: integer 
+	Parameter weights_bit_width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Weight_Trans' declared at 'C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/weight_trans.vhd:5' bound to instance 'Pre_weight_trans' of component 'Weight_Trans' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'Weight_Trans' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/weight_trans.vhd:32]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+	Parameter A_plus bound to: 1 - type: integer 
+	Parameter Tau_plus bound to: 32 - type: integer 
+	Parameter A_neg bound to: 1 - type: integer 
+	Parameter Tau_neg bound to: 32 - type: integer 
+	Parameter weights_bit_width bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Weight_Trans' (0#1) [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/weight_trans.vhd:32]
+	Parameter inputneuron bound to: 40 - type: integer 
+	Parameter addrbit bound to: 10 - type: integer 
+	Parameter time_length bound to: 10 - type: integer 
+	Parameter A_plus bound to: 1 - type: integer 
+	Parameter Tau_plus bound to: 32 - type: integer 
+	Parameter A_neg bound to: 1 - type: integer 
+	Parameter Tau_neg bound to: 32 - type: integer 
+	Parameter weights_bit_width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Weight_Trans' declared at 'C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/weight_trans.vhd:5' bound to instance 'Post_weight_trans' of component 'Weight_Trans' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:253]
+WARNING: [Synth 8-614] signal 'Weight_Delta_Indicator_pre' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+WARNING: [Synth 8-614] signal 'Weight_Delta_pre' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+WARNING: [Synth 8-614] signal 'Weight_Adress_2_pre' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+WARNING: [Synth 8-614] signal 'Weight_Adress_1_pre' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+WARNING: [Synth 8-614] signal 'Weight_Delta_Indicator_post' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+WARNING: [Synth 8-614] signal 'Weight_Delta_post' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+WARNING: [Synth 8-614] signal 'Weight_Adress_2_post' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+WARNING: [Synth 8-614] signal 'Weight_Adress_1_post' is read in the process but is not in the sensitivity list [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:280]
+INFO: [Synth 8-256] done synthesizing module 'Stdp' (0#1) [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:31]
+WARNING: [Synth 8-7129] Port Reset in module Weight_Trans is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Input_Valid in module AER_Encoder is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1443.191 ; gain = 532.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1443.191 ; gain = 532.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1443.191 ; gain = 532.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1443.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.srcs/constrs_1/new/stdp_c.xdc]
+Finished Parsing XDC File [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.srcs/constrs_1/new/stdp_c.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1548.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1548.121 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1548.121 ; gain = 637.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tiffg1156-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1548.121 ; gain = 637.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1548.121 ; gain = 637.695
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Queue_point_reg' [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/queue.vhd:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1548.121 ; gain = 637.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 336   
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 184   
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	  41 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 115   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Reset in module Weight_Trans is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Input_Valid in module AER_Encoder is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (Pre_queue/Queue_point_reg[0]) is unused and will be removed from module Stdp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1548.121 ; gain = 637.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 1548.121 ; gain = 637.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+      : Pre_encoder/plusOp_inferred/time_buffer[0]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[0]
+      : Pre_encoder/plusOp_inferred/time_buffer[1]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[1]
+      : Pre_encoder/plusOp_inferred/time_buffer[2]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[2]
+      : Pre_encoder/plusOp_inferred/time_buffer[3]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[3]
+      : Pre_encoder/plusOp_inferred/time_buffer[4]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[4]
+      : Pre_encoder/plusOp_inferred/time_buffer[5]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[5]
+      : Pre_encoder/plusOp_inferred/time_buffer[6]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[6]
+      : Pre_encoder/plusOp_inferred/time_buffer[7]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[7]
+      : Pre_encoder/plusOp_inferred/time_buffer[8]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[8]
+      : Pre_encoder/plusOp_inferred/time_buffer[9]
+      : Pre_encoder/plusOp_inferred/time_buffer0_out[9]
+      : Post_encoder/plusOp_inferred/time_buffer[0]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[0]
+      : Post_encoder/plusOp_inferred/time_buffer[1]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[1]
+      : Post_encoder/plusOp_inferred/time_buffer[2]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[2]
+      : Post_encoder/plusOp_inferred/time_buffer[3]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[3]
+      : Post_encoder/plusOp_inferred/time_buffer[4]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[4]
+      : Post_encoder/plusOp_inferred/time_buffer[5]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[5]
+      : Post_encoder/plusOp_inferred/time_buffer[6]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[6]
+      : Post_encoder/plusOp_inferred/time_buffer[7]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[7]
+      : Post_encoder/plusOp_inferred/time_buffer[8]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[8]
+      : Post_encoder/plusOp_inferred/time_buffer[9]
+      : Post_encoder/plusOp_inferred/time_buffer0_out[9]
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1632.312 ; gain = 721.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: \Pre_encoder/i_15 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_15 /I1 (LUT2)
+     2: \Pre_encoder/i_15 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_15 "
+Found timing loop:
+     0: \Pre_encoder/i_12 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_12 /I1 (LUT2)
+     2: \Pre_encoder/i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_12 "
+Found timing loop:
+     0: \Pre_encoder/i_10 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_10 /I1 (LUT2)
+     2: \Pre_encoder/i_10 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_10 "
+Found timing loop:
+     0: \Pre_encoder/i_9 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_9 /I1 (LUT2)
+     2: \Pre_encoder/i_9 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_9 "
+Found timing loop:
+     0: \Pre_encoder/i_11 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_11 /I1 (LUT2)
+     2: \Pre_encoder/i_11 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_11 "
+Found timing loop:
+     0: \Pre_encoder/i_13 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_13 /I1 (LUT2)
+     2: \Pre_encoder/i_13 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_13 "
+Found timing loop:
+     0: \Pre_encoder/i_14 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_14 /I1 (LUT2)
+     2: \Pre_encoder/i_14 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_14 "
+Found timing loop:
+     0: \Pre_encoder/i_16 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_16 /I1 (LUT2)
+     2: \Pre_encoder/i_16 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_16 "
+Found timing loop:
+     0: \Post_encoder/i_135 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_135 /I1 (LUT2)
+     2: \Post_encoder/i_135 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_135 "
+Found timing loop:
+     0: \Post_encoder/i_132 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_132 /I1 (LUT2)
+     2: \Post_encoder/i_132 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_132 "
+Found timing loop:
+     0: \Post_encoder/i_130 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_130 /I1 (LUT2)
+     2: \Post_encoder/i_130 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_130 "
+Found timing loop:
+     0: \Post_encoder/i_129 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_129 /I1 (LUT2)
+     2: \Post_encoder/i_129 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_129 "
+Found timing loop:
+     0: \Post_encoder/i_131 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_131 /I1 (LUT2)
+     2: \Post_encoder/i_131 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_131 "
+Found timing loop:
+     0: \Post_encoder/i_133 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_133 /I1 (LUT2)
+     2: \Post_encoder/i_133 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_133 "
+Found timing loop:
+     0: \Post_encoder/i_134 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_134 /I1 (LUT2)
+     2: \Post_encoder/i_134 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_134 "
+Found timing loop:
+     0: \Post_encoder/i_136 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_136 /I1 (LUT2)
+     2: \Post_encoder/i_136 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_136 "
+Found timing loop:
+     0: \Pre_encoder/i_17 /O (LUT2)
+      [(null):0]
+     1: \Pre_encoder/i_17 /I1 (LUT2)
+     2: \Pre_encoder/i_17 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Pre_encoder/i_17 "
+Found timing loop:
+     0: \Post_encoder/i_137 /O (LUT2)
+      [(null):0]
+     1: \Post_encoder/i_137 /I1 (LUT2)
+     2: \Post_encoder/i_137 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I1 -to O \Post_encoder/i_137 "
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1632.312 ; gain = 721.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 1633.684 ; gain = 723.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 1633.684 ; gain = 723.258
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: \time_attach[9]_i_2 /O (LUT5)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[9]_i_2 /I4 (LUT5)
+     2: \time_attach[9]_i_2 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I4 -to O \time_attach[9]_i_2 "
+Found timing loop:
+     0: \time_attach[7]_i_1 /O (LUT3)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[7]_i_1 /I2 (LUT3)
+     2: \time_attach[7]_i_1 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I2 -to O \time_attach[7]_i_1 "
+Found timing loop:
+     0: \time_attach[8]_i_1 /O (LUT4)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[8]_i_1 /I3 (LUT4)
+     2: \time_attach[8]_i_1 /O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I3 -to O \time_attach[8]_i_1 "
+Found timing loop:
+     0: \time_attach[5]_i_1 /O (LUT6)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[5]_i_1 /I5 (LUT6)
+     2: \time_attach[5]_i_1 /O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I5 -to O \time_attach[5]_i_1 "
+Found timing loop:
+     0: \time_attach[3]_i_1 /O (LUT4)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[3]_i_1 /I3 (LUT4)
+     2: \time_attach[3]_i_1 /O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I3 -to O \time_attach[3]_i_1 "
+Found timing loop:
+     0: \time_attach[2]_i_1 /O (LUT3)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[2]_i_1 /I2 (LUT3)
+     2: \time_attach[2]_i_1 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I2 -to O \time_attach[2]_i_1 "
+Found timing loop:
+     0: \time_attach[4]_i_1 /O (LUT5)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[4]_i_1 /I4 (LUT5)
+     2: \time_attach[4]_i_1 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I4 -to O \time_attach[4]_i_1 "
+Found timing loop:
+     0: \time_attach[9]_i_2__0 /O (LUT5)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[9]_i_2__0 /I4 (LUT5)
+     2: \time_attach[9]_i_2__0 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I4 -to O \time_attach[9]_i_2__0 "
+Found timing loop:
+     0: \time_attach[7]_i_1__0 /O (LUT3)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[7]_i_1__0 /I2 (LUT3)
+     2: \time_attach[7]_i_1__0 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I2 -to O \time_attach[7]_i_1__0 "
+Found timing loop:
+     0: \time_attach[8]_i_1__0 /O (LUT4)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[8]_i_1__0 /I3 (LUT4)
+     2: \time_attach[8]_i_1__0 /O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I3 -to O \time_attach[8]_i_1__0 "
+Found timing loop:
+     0: \time_attach[5]_i_1__0 /O (LUT6)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[5]_i_1__0 /I5 (LUT6)
+     2: \time_attach[5]_i_1__0 /O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I5 -to O \time_attach[5]_i_1__0 "
+Found timing loop:
+     0: \time_attach[3]_i_1__0 /O (LUT4)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[3]_i_1__0 /I3 (LUT4)
+     2: \time_attach[3]_i_1__0 /O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I3 -to O \time_attach[3]_i_1__0 "
+Found timing loop:
+     0: \time_attach[2]_i_1__0 /O (LUT3)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[2]_i_1__0 /I2 (LUT3)
+     2: \time_attach[2]_i_1__0 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I2 -to O \time_attach[2]_i_1__0 "
+Found timing loop:
+     0: \time_attach[4]_i_1__0 /O (LUT5)
+      [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+     1: \time_attach[4]_i_1__0 /I4 (LUT5)
+     2: \time_attach[4]_i_1__0 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/stdp.vhd:5]
+Inferred a: "set_disable_timing -from I4 -to O \time_attach[4]_i_1__0 "
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1633.684 ; gain = 723.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1633.684 ; gain = 723.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1633.684 ; gain = 723.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1633.684 ; gain = 723.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   124|
+|3     |LUT1   |    27|
+|4     |LUT2   |   241|
+|5     |LUT3   |   382|
+|6     |LUT4   |    97|
+|7     |LUT5   |  1340|
+|8     |LUT6   |  1982|
+|9     |MUXF7  |   530|
+|10    |MUXF8  |    84|
+|11    |FDCE   |  3480|
+|12    |FDPE   |     2|
+|13    |FDRE   |   320|
+|14    |IBUF   |    82|
+|15    |OBUF   |    26|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1633.684 ; gain = 723.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 32 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:20 . Memory (MB): peak = 1633.684 ; gain = 618.328
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1633.684 ; gain = 723.258
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1646.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 738 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1653.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 33d499bf
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 16 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1653.309 ; gain = 1179.656
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/62390/Desktop/ARE/zz_useless/stdp_bunding/sim/stdp_bouding/stdp_bouding.runs/synth_1/Stdp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Stdp_utilization_synth.rpt -pb Stdp_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 12 22:21:34 2023...

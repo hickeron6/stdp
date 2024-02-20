@@ -70,10 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/62390/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-464-LAPTOP-AH1MV0TF/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k70tfbv676-1
 
@@ -102,6 +98,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/62390/Desktop/ARE/encoder/sim/project_1/project_1.srcs/utils_1/imports/synth_1/AER_Encoder_TB.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

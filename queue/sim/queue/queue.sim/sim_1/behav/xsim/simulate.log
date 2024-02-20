@@ -1,1 +1,60 @@
 Time resolution is 1 ps
+Note: eventop_count_pre = 1
+Time: 65 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 1
+Time: 65 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count_pre = 2
+Time: 75 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 2
+Time: 75 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count_pre = 3
+Time: 85 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 3
+Time: 85 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 3
+Time: 95 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 105 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 2
+Time: 105 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 2
+Time: 115 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 2
+Time: 125 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 2
+Time: 135 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 145 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 1
+Time: 145 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 1
+Time: 155 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 1
+Time: 165 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 1
+Time: 175 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 185 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count_pre = 1
+Time: 255 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 1
+Time: 255 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count_pre = 2
+Time: 265 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 265 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 2
+Time: 265 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count_pre = 3
+Time: 275 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 275 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 3
+Time: 275 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 3
+Time: 285 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_count = 3
+Time: 295 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 305 ns  Iteration: 1  Process: /Queue_Module_TB/UUT/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: eventop_co
