@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_stdp_weight_bram_test_behav" "xil_defaultlib.tb_stdp_weight_bram_test" -log "elaborate.log" 

@@ -1,0 +1,22 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Stdp_tb_behav xil_defaultlib.Stdp_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(inputneuron=5,time...]
+Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=5,tau_...]
+Compiling architecture behavior of entity xil_defaultlib.Stdp [\Stdp(inputneuron=5,outputneuron...]
+Compiling architecture behavioral of entity xil_defaultlib.stdp_tb
+Built simulation snapshot Stdp_tb_behav

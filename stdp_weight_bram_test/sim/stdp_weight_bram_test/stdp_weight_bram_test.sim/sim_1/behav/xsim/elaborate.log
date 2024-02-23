@@ -1,0 +1,35 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_stdp_weight_bram_test_behav xil_defaultlib.tb_stdp_weight_bram_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package unimacro.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(inputneuron=5,time...]
+Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=5,tau_...]
+Compiling architecture behavior of entity xil_defaultlib.Stdp [\Stdp(inputneuron=5,outputneuron...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=36,write_...]
+Compiling architecture bram_v of entity unimacro.BRAM_SDP_MACRO [\BRAM_SDP_MACRO(bram_size="36Kb"...]
+Compiling architecture behaviour of entity xil_defaultlib.decoder [\decoder(n=6)\]
+Compiling architecture behaviour of entity xil_defaultlib.weights_bram [weights_bram_default]
+Compiling architecture behavior of entity xil_defaultlib.stdp_weight_bram_test [\stdp_weight_bram_test(inputneur...]
+Compiling architecture behavior of entity xil_defaultlib.tb_stdp_weight_bram_test
+Built simulation snapshot tb_stdp_weight_bram_test_behav

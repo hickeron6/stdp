@@ -1,0 +1,9 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/62390/Desktop/ARE/encoder/encoder.vhd,1708582100,vhdl,,,,aer_encoder,,,,,,,,
+C:/Users/62390/Desktop/ARE/queue/queue.vhd,1708591257,vhdl,,,,queue_module,,,,,,,,
+C:/Users/62390/Desktop/ARE/stdp/stdp.vhd,1705811314,vhdl,C:/Users/62390/Desktop/ARE/stdp/stdp_infile_tb.vhd,,,stdp,,,,,,,,
+C:/Users/62390/Desktop/ARE/stdp/stdp_infile_tb.vhd,1708582550,vhdl,,,,stdp_tb,,,,,,,,
+C:/Users/62390/Desktop/ARE/weight_trans/weight_trans.vhd,1707039354,vhdl,,,,weight_trans,,,,,,,,

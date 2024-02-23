@@ -1,0 +1,180 @@
+#-----------------------------------------------------------
+# xsim v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Feb 23 11:54:10 2024
+# Process ID: 109323
+# Current directory: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts
+# Command line: xsim -mode tcl -source {xsim.dir/work.Stdp_tb/xsim_script.tcl}
+# Log file: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts/xsim.log
+# Journal file: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts/xsim.jou
+# Running On: zzz-virtual-machine, OS: Linux, CPU Frequency: 2304.001 MHz, CPU Physical cores: 8, Host memory: 9525 MB
+#-----------------------------------------------------------
+source xsim.dir/work.Stdp_tb/xsim_script.tcl
+# xsim {work.Stdp_tb} -autoloadwcfg -tclbatch {commands.tcl}
+Time resolution is 1 ps
+source commands.tcl
+## run 10 ms
+Note: out queque
+Time: 100532500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 100537500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 100542500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 106672500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 106677500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 106682500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 106687500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 106692500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 125747500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 125752500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 132032500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 142902500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 151367500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 151372500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 151377500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 192827500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 192832500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195552500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195557500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195562500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195567500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195572500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195577500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195582500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 195587500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 211162500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 225802500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 225807500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 256392500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 256397500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 256402500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 265962500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 265967500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 265972500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 280567500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 286982500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 286987500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 286992500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 286997500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 292942500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 296472500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 296477500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 307227500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 311707500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 326402500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 326407500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 326412500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 335912500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 335917500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 335922500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 341832500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 352052500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 357162500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 357167500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 365652500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 365657500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 370822500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 376887500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 376892500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 383807500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 392897500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 412137500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 415617500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 415622500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 415627500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 431932500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 441162500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 447457500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 447462500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 447467500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 447472500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 453682500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 464082500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 465827500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 465832500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 465837500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 465842500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 475647500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+Note: out queque
+Time: 475652500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:51 . Memory (MB): peak = 1245.141 ; gain = 0.000 ; free physical = 2762 ; free virtual = 8217
+## quit
+INFO: xsimkernel Simulation Memory Usage: 9412820 KB (Peak: 9412820 KB), Simulation CPU Usage: 50840 ms
+INFO: [Common 17-206] Exiting xsim at Fri Feb 23 11:55:05 2024...

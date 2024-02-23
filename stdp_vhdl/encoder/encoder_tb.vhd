@@ -1,0 +1,75 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity AER_Encoder_TB is
+end AER_Encoder_TB;
+
+architecture Behavioral of AER_Encoder_TB is
+  -- Constants
+  constant inputneuron : integer := 784;  -- Number of input neurons
+  constant addrbit : integer := 10;      -- Event address bit width
+ constant time_length : integer := 10;
+
+
+  -- Signals
+  signal Clock : STD_LOGIC := '0';        -- Clock signal
+  signal Reset : STD_LOGIC := '0';        -- Reset signal
+  signal Input_Channel : STD_LOGIC_VECTOR(inputneuron-1 downto 0) := (others => '0');  -- Input channel (6 bits)
+  signal Event_Valid : STD_LOGIC;
+  signal Event_Address : STD_LOGIC_VECTOR(addrbit-1 downto 0);
+  signal Input_Valid : STD_LOGIC :='0';
+  signal time_attach : STD_LOGIC_VECTOR(time_length-1 downto 0);
+
+begin
+  -- Generate the clock signal
+  process
+  begin
+    wait for 5 ns;  -- Adjust the clock period as needed
+    Clock <= not Clock;
+  end process;
+
+  -- Generate the reset signal
+  process
+  begin
+    --wait for 10 ns;  -- Adjust the reset duration as needed
+    Reset <= '1';
+    wait for 10 ns;
+    Reset <= '0';
+    Input_Valid <='1';
+--    Input_Channel <="010011";
+--    wait for 100 ns;
+--    Input_Channel <="000101";
+--    wait for 100 ns;
+--    Input_Channel <="000101";
+--    wait for 100 ns;
+--    Input_Channel <="000111";
+    Input_Channel <="1101100001100010111010011011111010000110101110001110110101000111011000100101111110001110100011001011101010010110000000111000001011101110010001000011110010111010101000010011101100010101001000000101000110111111010110101111010111010110110001111101001101100100000010111110010011010101111100000011011010110101101000010001000010100000001100011101110011101001100001010010100101001011101011111000011000101110010001010110110111010110110111100001000011111010100010111000111111110100011101100100010001111000010100001101011000010101101011010101010001101100100000000001100101111101001000001110100010010010101100000111100101110000110111101101011110001101100111000011010111100100010101100010010110011011001010001101111101010010011001010011001101000101100100100101111010010010111110111011101001001111";
+    wait for 1000 ns;
+    Input_Channel <="0101101101101110101011011111101010111001110100011000000111000110010110101010010100010111110001111001000000100110110111010000110100011101101000110000001110100001110001100011100111101000111100111100001000101001111101101010101110111010111100110010011010010000110010000111110110011111001000001000100111011001010010101101100110011010101001000011111000001100010100100110111100000010000010000110001111011010100111101110001001101011111100110100101010111110100110010110110111010100011100111111111100100000111001000000110001001000010111100000100101110010100001101100001000100010011101010101011010111111000110101110001101110010111010101011111111000110000001001011010101010010111010001111101110111011001011100110101101100010101001010100010101101000101000011101011100111110000101000001011001101011";
+    wait for 1000 ns;
+
+    wait;
+  end process;
+
+  -- Instantiate the AER_Encoder module with the updated parameters
+  UUT: entity work.AER_Encoder
+    generic map (
+      inputneuron => inputneuron,  -- Number of input neurons
+      addrbit => addrbit           -- Event address bit width
+    )
+    port map (
+      Clock => Clock,
+      Reset => Reset,
+      Input_Channel => Input_Channel,
+      Input_Valid => Input_Valid,
+      Event_Valid => Event_Valid,
+      Event_Address => Event_Address,
+      time_attach => time_attach
+    );
+
+  -- Simulation code goes here
+  -- You can add code to monitor and display the signals, or perform additional tests.
+
+end architecture Behavioral;

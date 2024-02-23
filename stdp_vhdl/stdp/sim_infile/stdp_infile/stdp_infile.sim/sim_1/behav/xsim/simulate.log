@@ -1,0 +1,75 @@
+Time resolution is 1 ps
+Note: partdone
+Time: 22500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 27500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 32500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 247500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 442500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 452500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 462500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 472500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 852500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 862500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 872500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1047500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1052500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1057500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1097500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1267500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1277500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1287500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1457500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1462500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1467500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1472500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1502500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1532500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1687500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1707500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1727500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1872500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1877500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 1882500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 1912500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 2082500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 2102500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 2122500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Post_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 2277500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: out queque
+Time: 2282500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd
+Note: partdone
+Time: 2312500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__74  File: C:/Users/62390/Desktop/ARE/queue/queue.vhd

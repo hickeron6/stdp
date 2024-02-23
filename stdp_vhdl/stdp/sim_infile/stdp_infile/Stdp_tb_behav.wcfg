@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Stdp_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Stdp_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="253.001 ns"></ZoomEndTime>
+      <Cursor1Time time="2,500.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/Stdp_tb/Clock" type="logic">
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Input_Channel" type="array">
+      <obj_property name="ElementShortName">Input_Channel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Input_Channel[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Input_Valid" type="logic">
+      <obj_property name="ElementShortName">Input_Valid</obj_property>
+      <obj_property name="ObjectShortName">Input_Valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Output_Channel" type="array">
+      <obj_property name="ElementShortName">Output_Channel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Output_Channel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Output_Valid" type="logic">
+      <obj_property name="ElementShortName">Output_Valid</obj_property>
+      <obj_property name="ObjectShortName">Output_Valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Adress_1_pre" type="array">
+      <obj_property name="ElementShortName">Weight_Adress_1_pre[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Weight_Adress_1_pre[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Adress_2_pre" type="array">
+      <obj_property name="ElementShortName">Weight_Adress_2_pre[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Weight_Adress_2_pre[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Delta_pre" type="array">
+      <obj_property name="ElementShortName">Weight_Delta_pre[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Weight_Delta_pre[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Delta_Indicator_pre" type="logic">
+      <obj_property name="ElementShortName">Weight_Delta_Indicator_pre</obj_property>
+      <obj_property name="ObjectShortName">Weight_Delta_Indicator_pre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Adress_1_post" type="array">
+      <obj_property name="ElementShortName">Weight_Adress_1_post[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Weight_Adress_1_post[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Adress_2_post" type="array">
+      <obj_property name="ElementShortName">Weight_Adress_2_post[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Weight_Adress_2_post[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Delta_post" type="array">
+      <obj_property name="ElementShortName">Weight_Delta_post[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Weight_Delta_post[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/Weight_Delta_Indicator_post" type="logic">
+      <obj_property name="ElementShortName">Weight_Delta_Indicator_post</obj_property>
+      <obj_property name="ObjectShortName">Weight_Delta_Indicator_post</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Pre_queue/Queue" type="array">
+      <obj_property name="ElementShortName">Queue[0:527]</obj_property>
+      <obj_property name="ObjectShortName">Queue[0:527]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Post_queue/Queue" type="array">
+      <obj_property name="ElementShortName">Queue[0:263]</obj_property>
+      <obj_property name="ObjectShortName">Queue[0:263]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Pre_queue/Event_Valid_Oppo" type="logic">
+      <obj_property name="ElementShortName">Event_Valid_Oppo</obj_property>
+      <obj_property name="ObjectShortName">Event_Valid_Oppo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Pre_queue/Event_Address_oppo" type="array">
+      <obj_property name="ElementShortName">Event_Address_oppo[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Event_Address_oppo[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Post_encoder/Event_Address" type="array">
+      <obj_property name="ElementShortName">Event_Address[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Event_Address[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Post_encoder/Input_Valid" type="logic">
+      <obj_property name="ElementShortName">Input_Valid</obj_property>
+      <obj_property name="ObjectShortName">Input_Valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Post_encoder/Input_Channel" type="array">
+      <obj_property name="ElementShortName">Input_Channel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Input_Channel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Stdp_tb/DUT/Post_encoder/time_buffer" type="array">
+      <obj_property name="ElementShortName">time_buffer[9:0]</obj_property>
+      <obj_property name="ObjectShortName">time_buffer[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

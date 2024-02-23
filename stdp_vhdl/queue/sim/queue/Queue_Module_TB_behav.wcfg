@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Queue_Module_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Queue_Module_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="434.170 ns"></ZoomStartTime>
+      <ZoomEndTime time="535.371 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/Queue_Module_TB/Clock" type="logic">
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Event_Valid" type="logic">
+      <obj_property name="ElementShortName">Event_Valid</obj_property>
+      <obj_property name="ObjectShortName">Event_Valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Event_Valid_Oppo" type="logic">
+      <obj_property name="ElementShortName">Event_Valid_Oppo</obj_property>
+      <obj_property name="ObjectShortName">Event_Valid_Oppo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Event_Address" type="array">
+      <obj_property name="ElementShortName">Event_Address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Event_Address[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Event_Address_oppo" type="array">
+      <obj_property name="ElementShortName">Event_Address_oppo[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Event_Address_oppo[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Dequeued_Address" type="array">
+      <obj_property name="ElementShortName">Dequeued_Address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Dequeued_Address[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Address_oppo" type="array">
+      <obj_property name="ElementShortName">Address_oppo[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Address_oppo[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/Queue_Valid" type="logic">
+      <obj_property name="ElementShortName">Queue_Valid</obj_property>
+      <obj_property name="ObjectShortName">Queue_Valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Part_finish_d" type="logic">
+      <obj_property name="ElementShortName">Part_finish_d</obj_property>
+      <obj_property name="ObjectShortName">Part_finish_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Input_finish" type="logic">
+      <obj_property name="ElementShortName">Input_finish</obj_property>
+      <obj_property name="ObjectShortName">Input_finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/State" type="other">
+      <obj_property name="ElementShortName">State</obj_property>
+      <obj_property name="ObjectShortName">State</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Input_Buffer" type="array">
+      <obj_property name="ElementShortName">Input_Buffer[0:79]</obj_property>
+      <obj_property name="ObjectShortName">Input_Buffer[0:79]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Input_Buffer_Tail" type="other">
+      <obj_property name="ElementShortName">Input_Buffer_Tail</obj_property>
+      <obj_property name="ObjectShortName">Input_Buffer_Tail</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Input_Buffer_Head" type="other">
+      <obj_property name="ElementShortName">Input_Buffer_Head</obj_property>
+      <obj_property name="ObjectShortName">Input_Buffer_Head</obj_property>
+   </wvobject>
+</wave_config>

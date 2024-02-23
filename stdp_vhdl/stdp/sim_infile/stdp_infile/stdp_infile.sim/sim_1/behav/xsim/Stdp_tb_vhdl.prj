@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../encoder/encoder.vhd" \
+"../../../../../../../queue/queue.vhd" \
+"../../../../../../stdp.vhd" \
+"../../../../../../../weight_trans/weight_trans.vhd" \
+"../../../../../../stdp_infile_tb.vhd" \
+
+# Do not sort compile order
+nosort
