@@ -19,8 +19,8 @@ Compiling architecture behavioral of entity work.AER_Encoder [aer_encoder_defaul
 Compiling architecture behavioral of entity work.AER_Encoder [\AER_Encoder(inputneuron=400)\]
 Compiling architecture behavioral of entity work.Queue_Module [\Queue_Module(inputneuron=784,ti...]
 Compiling architecture behavioral of entity work.Queue_Module [\Queue_Module(inputneuron=400,ti...]
-Compiling architecture behavior of entity work.Weight_Trans [\Weight_Trans(tau_plus=16,tau_ne...]
+Compiling architecture behavior of entity work.Weight_Trans [\Weight_Trans(tau_plus=16,a_neg=...]
 Compiling architecture behavior of entity work.Weight_Trans [\Weight_Trans(inputneuron=400,ta...]
-Compiling architecture behavior of entity work.Stdp [\Stdp(tau_plus=16,tau_neg=16)\]
+Compiling architecture behavior of entity work.Stdp [\Stdp(tau_plus=16,a_neg=-1,tau_n...]
 Compiling architecture behavioral of entity work.stdp_tb
 Built simulation snapshot work.Stdp_tb

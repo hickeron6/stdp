@@ -1,7 +1,12 @@
+from math import exp
+import math
+
+
 import numpy as np
 
 from Parameter import *
-
+ 
+ 
 
 class STDPModel:
     def __init__(self, num_neurons_pre, num_neurons_post, learning_rate, time_window, weight_file):
@@ -10,7 +15,7 @@ class STDPModel:
         self.learning_rate = learning_rate
         self.time_window = time_window
         self.weights = self.load_weights(weight_file)
-        self.delta_weights = np.zeros((num_neurons_pre, num_neurons_post))  # 初始化delta_weights
+        self.delta_weights = np.zeros((num_neurons_pre, num_neurons_post))  
         print("Initial Weights:")
         print(self.weights)
         self.time = 0
@@ -40,16 +45,25 @@ class STDPModel:
                     if pre_spike[pre_neuron] != 0 and post_spike[post_neuron] != 0: 
                         delta_t = post_time[post_neuron] - pre_time[pre_neuron]
                         if delta_t <= time_window:
-                            weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = 1
+                        ############################
+                       	    exp_part_approx = round(math.exp(-delta_t / tauLTP)* 8 )
 
+                            weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = learning_rate * aLTP * exp_part_approx
+                            #weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = delta_t
+  			############################
                             print(f"Pre-time: {pre_time[pre_neuron]}, Post-time: {post_time[post_neuron]},weight 1")
                         
                 elif pre_time[pre_neuron] > post_time[post_neuron]:
                     if pre_spike[pre_neuron] != 0 and post_spike[post_neuron] != 0:
                         delta_t = pre_time[pre_neuron] - post_time[post_neuron]
                         if delta_t <= time_window:
-                            weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = -1
-
+                            ########################
+                            exp_part_approx = round(math.exp(-delta_t / tauLTD)* 8 )
+                            
+                            weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = learning_rate * aLTD * exp_part_approx
+                            #weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = -delta_t
+                            #########################
+			
                             print(f"Pre-time: {pre_time[pre_neuron]}, Post-time: {post_time[post_neuron]},weight -1")
                         
         return weight_change

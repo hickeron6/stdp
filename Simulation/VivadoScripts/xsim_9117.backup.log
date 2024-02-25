@@ -3,13 +3,13 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Feb 23 11:52:04 2024
-# Process ID: 108844
+# Start of session at: Sun Feb 25 14:02:33 2024
+# Process ID: 9117
 # Current directory: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts
 # Command line: xsim -mode tcl -source {xsim.dir/work.Stdp_tb/xsim_script.tcl}
 # Log file: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts/xsim.log
 # Journal file: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts/xsim.jou
-# Running On: zzz-virtual-machine, OS: Linux, CPU Frequency: 2304.001 MHz, CPU Physical cores: 8, Host memory: 9525 MB
+# Running On: zzz-virtual-machine, OS: Linux, CPU Frequency: 2304.002 MHz, CPU Physical cores: 8, Host memory: 9525 MB
 #-----------------------------------------------------------
 source xsim.dir/work.Stdp_tb/xsim_script.tcl
 # xsim {work.Stdp_tb} -autoloadwcfg -tclbatch {commands.tcl}
@@ -174,7 +174,7 @@ Note: out queque
 Time: 475647500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
 Note: out queque
 Time: 475652500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:49 . Memory (MB): peak = 1245.141 ; gain = 0.000 ; free physical = 2759 ; free virtual = 8213
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:47 . Memory (MB): peak = 1245.141 ; gain = 0.000 ; free physical = 4789 ; free virtual = 9343
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 9412820 KB (Peak: 9412820 KB), Simulation CPU Usage: 49230 ms
-INFO: [Common 17-206] Exiting xsim at Fri Feb 23 11:52:56 2024...
+INFO: xsimkernel Simulation Memory Usage: 9412820 KB (Peak: 9412820 KB), Simulation CPU Usage: 46660 ms
+INFO: [Common 17-206] Exiting xsim at Sun Feb 25 14:03:22 2024...

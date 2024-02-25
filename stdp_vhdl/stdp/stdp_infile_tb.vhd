@@ -14,7 +14,7 @@ architecture Behavioral of Stdp_tb is
   constant time_length : integer := 10;  
   constant A_plus : integer := 1;       
   constant Tau_plus : integer := 16;    
-  constant A_neg : integer := 1;        
+  constant A_neg : integer := -1;        
   constant Tau_neg : integer := 16;  
   constant weights_bit_width : integer := 5; 
 

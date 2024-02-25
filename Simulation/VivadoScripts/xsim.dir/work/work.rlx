@@ -5,5 +5,5 @@ May  7 2023
 /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/encoder/encoder.vhd,1708685318,vhdl,,,,aer_encoder,,,,,,,,
 /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd,1708685504,vhdl,,,,queue_module,,,,,,,,
 /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/stdp/stdp.vhd,1708685632,vhdl,/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/stdp/stdp_infile_tb.vhd,,,stdp,,,,,,,,
-/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/stdp/stdp_infile_tb.vhd,1708684451,vhdl,,,,stdp_tb,,,,,,,,
-/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/weight_trans/weight_trans.vhd,1708658162,vhdl,,,,weight_trans,,,,,,,,
+/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/stdp/stdp_infile_tb.vhd,1708749372,vhdl,,,,stdp_tb,,,,,,,,
+/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/weight_trans/weight_trans.vhd,1708866342,vhdl,,,,weight_trans,,,,,,,,

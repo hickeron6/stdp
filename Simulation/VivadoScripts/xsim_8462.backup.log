@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Feb 25 14:05:57 2024
-# Process ID: 9442
+# Start of session at: Sun Feb 25 13:55:37 2024
+# Process ID: 8462
 # Current directory: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts
 # Command line: xsim -mode tcl -source {xsim.dir/work.Stdp_tb/xsim_script.tcl}
 # Log file: /home/zzz/Desktop/stdp_784/ARE/Simulation/VivadoScripts/xsim.log
@@ -174,7 +174,7 @@ Note: out queque
 Time: 475647500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
 Note: out queque
 Time: 475652500 ps  Iteration: 1  Process: /Stdp_tb/DUT/Pre_queue/line__73  File: /home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/queue/queue.vhd
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:48 . Memory (MB): peak = 1245.141 ; gain = 0.000 ; free physical = 4784 ; free virtual = 9338
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:47 . Memory (MB): peak = 1245.141 ; gain = 0.000 ; free physical = 4787 ; free virtual = 9340
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 9412820 KB (Peak: 9412820 KB), Simulation CPU Usage: 48180 ms
-INFO: [Common 17-206] Exiting xsim at Sun Feb 25 14:06:49 2024...
+INFO: xsimkernel Simulation Memory Usage: 9412820 KB (Peak: 9412820 KB), Simulation CPU Usage: 47240 ms
+INFO: [Common 17-206] Exiting xsim at Sun Feb 25 13:56:27 2024...
