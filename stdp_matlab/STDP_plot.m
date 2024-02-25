@@ -10,10 +10,10 @@ deltaW = zeros(size(dt));
 for i = 1:length(dt)
     if dt(i) > 0
         % LTP: Δt > 0
-        deltaW(i) = eta * aLTP * exp(-dt(i)/tauLTP); % 注意：应用负号调整
+        deltaW(i) = eta * aLTP * exp(-dt(i)/tauLTP); 
     elseif dt(i) < 0
         % LTD: Δt < 0
-        deltaW(i) = eta * aLTD * exp(dt(i)/tauLTD); % 注意：应用负号调整
+        deltaW(i) = eta * aLTD * exp(dt(i)/tauLTD); 
     else
         % Δt = 0
         deltaW(i) = 0;

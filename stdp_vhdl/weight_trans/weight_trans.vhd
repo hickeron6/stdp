@@ -73,7 +73,7 @@ begin
        if signed_t2 /= 0 or signed_t1 /= 0 then
        	Time_Delta := signed_t1 - signed_t2;
         if Time_Delta > 0 and Time_Delta < Tau_neg then
-          -----------------------
+          -----------------------basic stdp approx count
           index := Time_Delta - 1;
           Weight_Delta_Approx := A_neg * exp_table_LTD(index) ;
           --Weight_Delta_Approx <= -Time_Delta;
