@@ -50,7 +50,7 @@ class STDPModel:
 
                             weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = learning_rate * aLTP * exp_part_approx
                             #weight_change[num_neurons_pre-pre_neuron-1, num_neurons_post-post_neuron-1] = delta_t
-  			############################
+  			            ############################
                             print(f"Pre-time: {pre_time[pre_neuron]}, Post-time: {post_time[post_neuron]},weight 1")
                         
                 elif pre_time[pre_neuron] > post_time[post_neuron]:
@@ -91,15 +91,15 @@ class STDPModel:
                 post_spike = post_spikes[j]
                 post_time = post_times[j]
 
-                # 检查当前脉冲是否与上一次的脉冲相同，如果是，则忽略
+                
                 if pre_spike == last_pre_spike and post_spike == last_post_spike:
                     continue
 
-                # 更新上一次的脉冲记录
+                
                 last_pre_spike = pre_spike
                 last_post_spike = post_spike
 
-                # 如果脉冲不同，则更新权重
+                
                 self.update_weights(pre_spike, post_spike, pre_time, post_time)
 
 

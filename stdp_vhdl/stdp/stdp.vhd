@@ -17,19 +17,19 @@ entity Stdp is
   port (
     Clock : in STD_LOGIC;                           -- Clock signal
     Reset : in STD_LOGIC;                           -- Reset signal
-    Input_Channel : in STD_LOGIC_VECTOR(inputneuron-1 downto 0); -- Input channels
-    Input_Valid : in STD_LOGIC;
-    Output_Channel : in STD_LOGIC_VECTOR(outputneuron-1 downto 0); -- Input channels
-    Output_Valid : in STD_LOGIC;
+    Input_Channel : in STD_LOGIC_VECTOR(inputneuron-1 downto 0); -- Input channels of spike (from pre neuron)
+    Input_Valid : in STD_LOGIC;                                    --pre spike sign
+    Output_Channel : in STD_LOGIC_VECTOR(outputneuron-1 downto 0); -- Output channels (from post neuron)
+    Output_Valid : in STD_LOGIC;                                    --post spike sign
 
-    Weight_Adress_1_pre : out STD_LOGIC_VECTOR(addrbit-1 downto 0);
-    Weight_Adress_2_pre : out STD_LOGIC_VECTOR(addrbit-1 downto 0);
-    Weight_Adress_1_post : out STD_LOGIC_VECTOR(addrbit-1 downto 0);
-    Weight_Adress_2_post : out STD_LOGIC_VECTOR(addrbit-1 downto 0);
-    Weight_Delta_pre : out STD_LOGIC_VECTOR(weights_bit_width-1 downto 0);
-    Weight_Delta_Indicator_pre : out STD_LOGIC;  -- Indicator for Weight_Delta
-    Weight_Delta_post : out STD_LOGIC_VECTOR(weights_bit_width-1 downto 0);
-    Weight_Delta_Indicator_post : out STD_LOGIC  -- Indicator for Weight_Delta
+    Weight_Adress_1_pre : out STD_LOGIC_VECTOR(addrbit-1 downto 0);               --AER address of the weight row (pre neuron)
+    Weight_Adress_2_pre : out STD_LOGIC_VECTOR(addrbit-1 downto 0);               --AER address of the weight column (pre neuron)
+    Weight_Adress_1_post : out STD_LOGIC_VECTOR(addrbit-1 downto 0);              --AER address of the weight row (post neuron)
+    Weight_Adress_2_post : out STD_LOGIC_VECTOR(addrbit-1 downto 0);              --AER address of the weight column (post neuron)
+    Weight_Delta_pre : out STD_LOGIC_VECTOR(weights_bit_width-1 downto 0);        --Weight Delta (pre correspond)
+    Weight_Delta_Indicator_pre : out STD_LOGIC;                                   -- Indicator for Weight_Delta
+    Weight_Delta_post : out STD_LOGIC_VECTOR(weights_bit_width-1 downto 0);       --Weight Delta (post correspond)
+    Weight_Delta_Indicator_post : out STD_LOGIC                                   -- Indicator for Weight_Delta
     );
 end entity Stdp;
 
@@ -132,6 +132,7 @@ end component Weight_Trans;
 
 begin
 
+
   Pre_encoder : AER_Encoder
   generic map(
     inputneuron    =>   inputneuron,
@@ -148,6 +149,8 @@ begin
     Event_Address  =>   Event_Address_pre,
     time_attach    =>   time_attach_pre
     );
+
+
 
   Post_encoder : AER_Encoder
   generic map(
@@ -194,6 +197,8 @@ begin
     Queue_Valid        =>   Queue_Valid_pre
     );
 
+
+
   Post_queue : Queue_Module
   generic map(
     inputneuron    =>   outputneuron,
@@ -223,6 +228,8 @@ begin
 
 
 
+
+
   Pre_weight_trans : Weight_Trans
   generic map(
     inputneuron     =>   inputneuron,
@@ -248,6 +255,8 @@ begin
     Weight_Delta       =>   Weight_Delta_pre,
     Weight_Delta_Indicator   =>   Weight_Delta_Indicator_pre
     );
+
+
 
   Post_weight_trans : Weight_Trans
   generic map(

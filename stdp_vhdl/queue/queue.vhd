@@ -24,9 +24,9 @@ entity Queue_Module is
     time_attach : in STD_LOGIC_VECTOR(time_length-1 downto 0); -- Time attachment
     time_attach_oppo : in STD_LOGIC_VECTOR(time_length-1 downto 0); -- Time attachment
     -- 
-    Dequeued_Address : out STD_LOGIC_VECTOR(addrbit-1 downto 0);
-    Address_oppo : out STD_LOGIC_VECTOR(addrbit-1 downto 0);                      --add
-    Dequeued_Time : out STD_LOGIC_VECTOR(time_length-1 downto 0);
+    Dequeued_Address : out STD_LOGIC_VECTOR(addrbit-1 downto 0);      --Dequeue address for each oppo input event
+    Address_oppo : out STD_LOGIC_VECTOR(addrbit-1 downto 0);                      
+    Dequeued_Time : out STD_LOGIC_VECTOR(time_length-1 downto 0);     --Dequeue time for each oppo input event
     Time_oppo : out STD_LOGIC_VECTOR(time_length-1 downto 0);                     --add
     Queue_Valid : out STD_LOGIC
     );
@@ -170,6 +170,8 @@ begin
             report "Head to end";
           end if;
           
+
+
         if Queue_Tail /= Queue_Head then--or Queue(Queue_Head).Time_Attach /= (time_length-1 downto 0 => '0') or Queue(Queue_Head).Address /= (addrbit-1 downto 0 => '0') then
           if to_integer(unsigned(time_attach_oppo)) - to_integer(unsigned(Queue(Queue_Head).Time_Attach)) > Tau_plus then
             Queue(Queue_Head).Address <= (others => '0');
@@ -177,26 +179,30 @@ begin
             Queue_point <= (Queue_point + 1) mod (inputneuron * Tau_plus);
             Queue_Head <= (Queue_Head + 1) mod (inputneuron * Tau_plus);                                               --Delect element whitch beyoned time window
             report "out queque";
+
+
             else
             Dequeued_Address <= Queue(Queue_Head).Address;
             Dequeued_Time <= Queue(Queue_Head).Time_Attach;
 --            report "The value of Queue_point is " & integer'image(Queue_point) severity note;
 --            report "The value of Queue_Head is " & integer'image(Queue_Head) severity note;
 --            report "The value of Queue_Tail is " & integer'image(Queue_Tail) severity note;
-		Queue_Head <= (Queue_Head + 1) mod (inputneuron * Tau_plus);
-		Queue_Valid <= '1';
-		Part_finish := '0';
+		        Queue_Head <= (Queue_Head + 1) mod (inputneuron * Tau_plus);
+		        Queue_Valid <= '1';
+		        Part_finish := '0';
 
-	   end if;
-	else
+	       end if;
+	     else
 
-	  eventop_count := eventop_count - 1;
-	  Part_finish := '1';
+	        eventop_count := eventop_count - 1;
+	        Part_finish := '1';
           --report"partdone";
           Dequeued_Address <= (others => '0');
           Dequeued_Time <= (others => '0');          
           Queue_Head <= Queue_point;
           Queue_Valid <= '0';
+
+
 
           if eventop_count = 0 then 
             Input_finish <= '1';
@@ -205,6 +211,8 @@ begin
             else
             Input_finish <= '0'; 
           end if;
+
+
 
 
           ---
@@ -228,6 +236,7 @@ begin
           Input_Buffer_Tail <= 0;
           Input_Buffer_Head <= 0;
         end if;
+
 
 
         if eventop_count /= 0  or Event_Valid_Oppo = '1' then
