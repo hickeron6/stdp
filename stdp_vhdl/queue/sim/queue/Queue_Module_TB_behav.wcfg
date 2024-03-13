@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="434.170 ns"></ZoomStartTime>
-      <ZoomEndTime time="535.371 ns"></ZoomEndTime>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="262.501 ns"></ZoomEndTime>
       <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="235"></NameColumnWidth>
-      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+      <NameColumnWidth column_width="224"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/Queue_Module_TB/Clock" type="logic">
       <obj_property name="ElementShortName">Clock</obj_property>
       <obj_property name="ObjectShortName">Clock</obj_property>
@@ -52,6 +52,11 @@
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Dequeued_Time" type="array">
+      <obj_property name="ElementShortName">Dequeued_Time[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Dequeued_Time[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
    <wvobject fp_name="/Queue_Module_TB/Address_oppo" type="array">
       <obj_property name="ElementShortName">Address_oppo[2:0]</obj_property>
       <obj_property name="ObjectShortName">Address_oppo[2:0]</obj_property>
@@ -75,11 +80,6 @@
       <obj_property name="ElementShortName">State</obj_property>
       <obj_property name="ObjectShortName">State</obj_property>
    </wvobject>
-   <wvobject fp_name="/Queue_Module_TB/UUT/Input_Buffer" type="array">
-      <obj_property name="ElementShortName">Input_Buffer[0:79]</obj_property>
-      <obj_property name="ObjectShortName">Input_Buffer[0:79]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/Queue_Module_TB/UUT/Input_Buffer_Tail" type="other">
       <obj_property name="ElementShortName">Input_Buffer_Tail</obj_property>
       <obj_property name="ObjectShortName">Input_Buffer_Tail</obj_property>
@@ -87,5 +87,17 @@
    <wvobject fp_name="/Queue_Module_TB/UUT/Input_Buffer_Head" type="other">
       <obj_property name="ElementShortName">Input_Buffer_Head</obj_property>
       <obj_property name="ObjectShortName">Input_Buffer_Head</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Queue_Tail" type="other">
+      <obj_property name="ElementShortName">Queue_Tail</obj_property>
+      <obj_property name="ObjectShortName">Queue_Tail</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Queue_Head" type="other">
+      <obj_property name="ElementShortName">Queue_Head</obj_property>
+      <obj_property name="ObjectShortName">Queue_Head</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Queue_Module_TB/UUT/Queue_point" type="other">
+      <obj_property name="ElementShortName">Queue_point</obj_property>
+      <obj_property name="ObjectShortName">Queue_point</obj_property>
    </wvobject>
 </wave_config>

@@ -6,6 +6,12 @@ tauLTP = 17; % ms
 tauLTD = 34; % ms
 eta = 1; 
 
+% aLTP = 0.001;
+% aLTD = -0.001;
+% tauLTP = 200; % ms
+% tauLTD = 200; % ms
+% eta = 1;
+
 deltaW = zeros(size(dt));
 for i = 1:length(dt)
     if dt(i) > 0

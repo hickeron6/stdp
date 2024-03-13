@@ -1,0 +1,12 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/62390/Desktop/ARE/stdp_vhdl/encoder/encoder.vhd,1710102829,vhdl,,,,aer_encoder,,,,,,,,
+C:/Users/62390/Desktop/ARE/stdp_vhdl/queue/queue.vhd,1710100516,vhdl,,,,queue_module,,,,,,,,
+C:/Users/62390/Desktop/ARE/stdp_vhdl/stdp/stdp.vhd,1708916297,vhdl,,,,stdp,,,,,,,,
+C:/Users/62390/Desktop/ARE/stdp_vhdl/weight_trans/weight_trans.vhd,1710106074,vhdl,,,,weight_trans,,,,,,,,
+C:/Users/62390/Desktop/ARE/weight_stdp/decoder.vhd,1675761903,vhdl,,,,decoder,,,,,,,,
+C:/Users/62390/Desktop/ARE/weight_stdp/stdp_weight_bram_test/stdp_weight_bram_test.vhd,1705322056,vhdl,C:/Users/62390/Desktop/ARE/weight_stdp/stdp_weight_bram_test/stdp_weight_bram_test_tb.vhd,,,stdp_weight_bram_test,,,,,,,,
+C:/Users/62390/Desktop/ARE/weight_stdp/stdp_weight_bram_test/stdp_weight_bram_test_tb.vhd,1710333697,vhdl,,,,tb_stdp_weight_bram_test,,,,,,,,
+C:/Users/62390/Desktop/ARE/weight_stdp/weights_bram.vhd,1708684694,vhdl,,,,weights_bram,,,,,,,,

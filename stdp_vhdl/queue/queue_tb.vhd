@@ -11,9 +11,9 @@ architecture Behavioral of Queue_Module_TB is
   constant inputneuron : integer := 5;  -- Number of input neurons
   constant addrbit : integer := 3;      -- Event address bit width
   constant time_length : integer := 10;  -- Time counter bit width
-  constant Tau_plus : integer  := 16;  -- As the time window
+  constant Tau_plus : integer  := 116;  -- As the time window
   constant  A_neg : integer := 1;  -- Using integer
-  constant  Tau_neg : integer  := 16 ; -- As the time window
+  constant  Tau_neg : integer  := 116 ; -- As the time window
   constant Queue_length : integer := 10;
 
   -- Signals

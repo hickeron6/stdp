@@ -8,19 +8,19 @@ entity Stdp_tb is
 end Stdp_tb;
 
 architecture Behavioral of Stdp_tb is
-  constant inputneuron : integer := 784; 
-  constant outputneuron : integer := 400; 
+  constant inputneuron : integer := 5; 
+  constant outputneuron : integer := 2; 
   constant addrbit : integer := 10;      
   constant time_length : integer := 10;  
   constant A_plus : integer := 1;       
-  constant Tau_plus : integer := 16;    
+  constant Tau_plus : integer := 4;    
   constant A_neg : integer := -1;        
-  constant Tau_neg : integer := 16;  
+  constant Tau_neg : integer := 4;  
   constant weights_bit_width : integer := 5; 
 
-  constant input_spikes_file : string  := "/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/stdp/input_spike.txt";  
-  constant output_spikes_file : string  := "/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/stdp/output_spike.txt";
-  constant weight_delta_file : string := "/home/zzz/Desktop/stdp_784/ARE/stdp_vhdl/stdp/weight_delta_vhdl.txt";
+  constant input_spikes_file : string  := "C:\Users\62390\Desktop\ARE\stdp_vhdl\stdp\input_spike.txt";  
+  constant output_spikes_file : string  := "C:\Users\62390\Desktop\ARE\stdp_vhdl\stdp\output_spike.txt";
+  constant weight_delta_file : string := "C:\Users\62390\Desktop\ARE\stdp_vhdl\stdp\weight_delta_vhdl.txt";
 
   
   signal Clock : STD_LOGIC := '0';
@@ -165,12 +165,12 @@ begin
     Input_Channel <= inputs_var; 
     Input_Valid <= '1';
     Output_Valid <= '0'; 
-    wait for 5000 ns;
+    wait for 150 ns;
     Output_Channel <= outputs_var; 
     Output_Valid <= '1';
     Input_Valid <= '0';
     
-    wait for 5000 ns;
+    wait for 150 ns;
     
 
     end if;

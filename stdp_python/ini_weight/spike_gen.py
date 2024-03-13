@@ -3,7 +3,7 @@ import numpy as np
 
 def generate_spikes(pre_neuron, pre_time_length, post_neuron, post_time_length):
     # Set the probability of generating 1 and the probability of generating 0
-    p = [0.9985, 0.0015]  
+    p = [0.6, 0.4]  
     input_spike = np.random.choice([0, 1], size=(pre_time_length, pre_neuron), p=p)
     output_spike = np.random.choice([0, 1], size=(post_time_length, post_neuron), p=p)
     return input_spike, output_spike

@@ -14,6 +14,16 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package unimacro.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=36,write_...]
+Compiling architecture bram_v of entity unimacro.BRAM_SDP_MACRO [\BRAM_SDP_MACRO(bram_size="36Kb"...]
 Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(inputneuron=5,addr...]
 Compiling architecture behavioral of entity xil_defaultlib.queue_module_tb
 Built simulation snapshot Queue_Module_TB_behav

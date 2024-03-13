@@ -1,7 +1,7 @@
-num_neurons_pre = 784
-num_neurons_post = 400
+num_neurons_pre = 5
+num_neurons_post = 2
 learning_rate = 1
-time_window = 16
+time_window = 4
 
 aLTP = 1
 aLTD = -1               #vhdl for integer  

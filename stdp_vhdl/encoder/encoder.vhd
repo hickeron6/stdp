@@ -72,11 +72,12 @@ begin
     if Reset = '1' then
       cnt <= 0;
       --time_buffer <= (others => '0');
+      --time_buffer(0) <= '1';
     
     elsif rising_edge(Clock) then 
     
     cnt <= cnt + 1;
-    if cnt = 1000 then                        --  Time need consider
+    if cnt = 30 then                        --  Time need consider
         cnt <= 0;
         time_buffer <= time_buffer + 1;
     end if;

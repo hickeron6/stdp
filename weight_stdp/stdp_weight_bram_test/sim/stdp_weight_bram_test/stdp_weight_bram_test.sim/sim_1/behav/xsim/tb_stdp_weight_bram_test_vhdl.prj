@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../weights_bram.vhd" \
+"../../../../../../stdp_weight_bram_test.vhd" \
+"../../../../../../stdp_weight_bram_test_tb.vhd" \
+"../../../../../../../../stdp_vhdl/queue/queue.vhd" \
+"../../../../../../../../stdp_vhdl/stdp/stdp.vhd" \
+"../../../../../../../../stdp_vhdl/encoder/encoder.vhd" \
+"../../../../../../../../stdp_vhdl/weight_trans/weight_trans.vhd" \
+"../../../../../../../decoder.vhd" \
+
+# Do not sort compile order
+nosort

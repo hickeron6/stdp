@@ -15,12 +15,21 @@ Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_textio
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=4)\]
+Compiling package unisim.vcomponents
+Compiling package unimacro.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=5)\]
 Compiling architecture behavioral of entity xil_defaultlib.AER_Encoder [\AER_Encoder(inputneuron=2)\]
-Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(time_length=10,tau...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=36,write_...]
+Compiling architecture bram_v of entity unimacro.BRAM_SDP_MACRO [\BRAM_SDP_MACRO(bram_size="36Kb"...]
+Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(inputneuron=5,time...]
 Compiling architecture behavioral of entity xil_defaultlib.Queue_Module [\Queue_Module(inputneuron=2,time...]
-Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=4,tau_...]
-Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=2,tau_...]
-Compiling architecture behavior of entity xil_defaultlib.Stdp [\Stdp(inputneuron=4,outputneuron...]
+Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=5,a_ne...]
+Compiling architecture behavior of entity xil_defaultlib.Weight_Trans [\Weight_Trans(inputneuron=2,a_ne...]
+Compiling architecture behavior of entity xil_defaultlib.Stdp [\Stdp(inputneuron=5,outputneuron...]
 Compiling architecture behavioral of entity xil_defaultlib.stdp_tb
 Built simulation snapshot Stdp_tb_behav

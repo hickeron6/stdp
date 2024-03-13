@@ -8,9 +8,9 @@ entity Weight_Trans is
     addrbit : integer := 10;
     time_length : integer := 10;
     A_plus : integer := 1;  -- Using integer
-    Tau_plus : integer := 32;  -- As the time window
+    Tau_plus : integer := 4;  -- As the time window
     A_neg : integer := 1;  -- Using integer
-    Tau_neg : integer := 10032;  -- As the time window
+    Tau_neg : integer := 4;  -- As the time window
     weights_bit_width : integer := 5
     --learning_rate : integer := 1
   );
@@ -32,12 +32,14 @@ end Weight_Trans;
 
 architecture Behavior of Weight_Trans is
 
-  type exp_table_type is array(0 to (Tau_plus+Tau_neg)) of integer;
+  type exp_table_type is array(0 to (Tau_plus+Tau_neg-1)) of integer;
   
   --from matlab create
-  constant exp_table_LTP: exp_table_type := (8, 7, 7, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1);
-  constant exp_table_LTD: exp_table_type := (8, 7, 7, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1);
-
+  --constant exp_table_LTP: exp_table_type := (8, 7, 7, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1);
+  --constant exp_table_LTD: exp_table_type := (8, 7, 7, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1);
+    constant exp_table_LTP: exp_table_type := (8, 7, 7, 6, 6, 5, 5, 5);
+    constant exp_table_LTD: exp_table_type := (8, 7, 7, 6, 6, 5, 5, 5); 
+    
   --signal Time_Delta : integer := 0; 
   --signal Weight_Delta_Approx : integer := 0;  -- Using integer
   signal signed_t1, signed_t2 : INTEGER := 0;
@@ -76,7 +78,7 @@ begin
           -----------------------basic stdp approx count
           index := Time_Delta - 1;
           Weight_Delta_Approx := A_neg * exp_table_LTD(index) ;
-          --Weight_Delta_Approx <= -Time_Delta;
+          --Weight_Delta_Approx := -Time_Delta;
           -----------------------
           Weight_Delta_Indicator <= '1';  -- Indicator signal set to '1'
           Weight_Adress_1 <= Weight_Adress_1_buffer;
@@ -86,8 +88,8 @@ begin
           Time_Delta := abs(signed_t1 - signed_t2);
           index := Time_Delta - 1;
           Weight_Delta_Approx := A_plus * exp_table_LTP(index) ; 
-          --learning_rate * aLTD * exp(-delta_t / tauLTD)
-          --Weight_Delta_Approx <= Time_Delta;
+          
+          --Weight_Delta_Approx := Time_Delta;
           ----------------------
           Weight_Delta_Indicator <= '1';  -- Indicator signal set to '1'
           Weight_Adress_1 <= Weight_Adress_1_buffer;
@@ -99,7 +101,7 @@ begin
           Weight_Adress_2 <= (others => '0');
           report "time1 = " & integer'image(signed_t1) severity note;
           report "time2 = " & integer'image(signed_t2) severity note;
-          report"errorrrrrrrrrrrr";
+          report"erro or out queue";
         end if;
        else
           Weight_Delta_Approx := 0;

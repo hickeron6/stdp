@@ -9,9 +9,9 @@ entity Stdp is
     addrbit : integer := 10;             --10
     time_length : integer := 10;           --5
     A_plus : integer := 1;  -- Using integer
-    Tau_plus : integer := 32;  -- As the time window
+    Tau_plus : integer := 4;  -- As the time window
     A_neg : integer := 1;  -- Using integer
-    Tau_neg : integer := 32;  -- As the time window
+    Tau_neg : integer := 4;  -- As the time window
     weights_bit_width : integer := 5
     );
   port (

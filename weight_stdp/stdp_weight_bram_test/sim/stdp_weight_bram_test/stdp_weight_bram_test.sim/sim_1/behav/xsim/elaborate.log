@@ -1,0 +1,8 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_stdp_weight_bram_test_behav xil_defaultlib.tb_stdp_weight_bram_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-8944] expression has 2 elements; formal 'output_channel' expects 5 [C:/Users/62390/Desktop/ARE/weight_stdp/stdp_weight_bram_test/stdp_weight_bram_test_tb.vhd:80]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_stdp_weight_bram_test in library work failed.
